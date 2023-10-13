@@ -10,7 +10,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <FloatingWhatsApp
       phoneNumber="+905325132858"
       accountName="Birey Tour"
-      avatar="logo.jpg"
+      avatar="/logo50x50.png"
       statusMessage="En fazla 2 saat içerisinde geri dönüş yapacağız."
       chatMessage="Size nasıl yardımcı olabiliriz?"
       placeholder="Bir mesaj yaz."
