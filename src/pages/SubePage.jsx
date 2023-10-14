@@ -72,6 +72,12 @@ const TableContainer = styled.div`
   }
 `;
 
+const MobileNone = styled.th`
+  @media screen and (max-width: 600px) {
+    display: none;
+  }
+`;
+
 const SubePage = () => {
   const { pathname } = useLocation();
   useScrollToTop(pathname, 'Şubelerimiz');
@@ -83,9 +89,9 @@ const SubePage = () => {
         <table className="table">
           <thead>
             <tr>
-              <th scope="col">#</th>
+              <MobileNone scope="col">#</MobileNone>
               <th scope="col">Şube Adı</th>
-              <th scope="col">Şehir</th>
+              <MobileNone scope="col">Şehir</MobileNone>
               <th scope="col">Telefon Numarası</th>
             </tr>
           </thead>
@@ -93,17 +99,17 @@ const SubePage = () => {
             {subeler.length &&
               subeler.map((sube) => (
                 <tr key={sube.id}>
-                  <th scope="row">{sube.id}</th>
+                  <MobileNone scope="row">{sube.id}</MobileNone>
                   <td style={{ padding: '8px 12px' }}>
                     <button style={{ padding: '8px 12px', border: 'none', backgroundColor: 'transparent' }}>
                       {sube.name}
                     </button>
                   </td>
-                  <td>
+                  <MobileNone>
                     <button style={{ padding: '8px 12px', border: 'none', backgroundColor: 'transparent' }}>
                       {sube.location}
                     </button>
-                  </td>
+                  </MobileNone>
                   <td>
                     {sube.phoneNumber ? (
                       <a href={`tel:+90${sube.phoneNumber}`}>
