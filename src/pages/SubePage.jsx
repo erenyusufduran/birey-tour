@@ -1,9 +1,9 @@
 import { useLocation } from 'react-router-dom';
-import { useScrollToTop } from '../hooks/useScrollToTop';
-import Table from '../components/Table';
-import Masthead from '../components/Masthead';
-import TableRow from '../components/TableRow';
+import { FaPhone } from 'react-icons/fa';
 import styled from 'styled-components';
+
+import { useScrollToTop } from '../hooks/useScrollToTop';
+import Masthead from '../components/Masthead';
 
 const subeler = [
   {
@@ -49,7 +49,7 @@ const subeler = [
   { id: 9, name: 'Kastamonu Şubesi', location: 'Kastamonu', phoneNumber: '5436718513' },
   { id: 10, name: 'Kırkağaç Şubesi', location: 'Manisa' },
   { id: 11, name: 'Turgutlu Şubesi', location: 'Manisa' },
-  { id: 12, name: 'Kadıköy Şubesi', location: 'İstanbul', phoneNumber: "5325132858" },
+  { id: 12, name: 'Kadıköy Şubesi', location: 'İstanbul', phoneNumber: '5325132858' },
   { id: 13, name: 'Kaynarca Şubesi', location: 'İstanbul' },
   { id: 14, name: 'Avcılar Şubesi', location: 'İstanbul' },
   { id: 15, name: 'Gaziosmanpaşa Şubesi', location: 'İstanbul', phoneNumber: '5348491825' },
@@ -58,8 +58,18 @@ const subeler = [
   { id: 18, name: 'Sakarya Şubesi', location: 'Sakarya', phoneNumber: '5325454625' },
 ];
 
-const TableHeader = styled.div`
-  font-weight: 700;
+const TableContainer = styled.div`
+  width: 50%;
+  margin: 40px auto;
+  text-align: center;
+
+  @media screen and (max-width: 1200px) {
+    width: 70%;
+  }
+
+  @media screen and (max-width: 900px) {
+    width: 100%;
+  }
 `;
 
 const SubePage = () => {
@@ -69,17 +79,53 @@ const SubePage = () => {
   return (
     <>
       <Masthead headerText="Şubelerimiz" headerColor="#fff" img="/umre_header.jpg" />
-      <div style={{ width: '80%', margin: '0 auto', fontSize: '6px' }}>
-        <Table columns="2fr 2fr 2fr">
-          <Table.Header>
-            <TableHeader>ŞUBE ADI</TableHeader>
-            <TableHeader>ŞEHİR</TableHeader>
-            <TableHeader>TELEFON</TableHeader>
-          </Table.Header>
-
-          <Table.Body data={subeler} render={(sube) => <TableRow key={sube.id} sube={sube} />}></Table.Body>
-        </Table>
-      </div>
+      <TableContainer>
+        <table className="table">
+          <thead>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Şube Adı</th>
+              <th scope="col">Şehir</th>
+              <th scope="col">Telefon Numarası</th>
+            </tr>
+          </thead>
+          <tbody>
+            {subeler.length &&
+              subeler.map((sube) => (
+                <tr key={sube.id}>
+                  <th scope="row">{sube.id}</th>
+                  <td style={{ padding: '8px 12px' }}>
+                    <button style={{ padding: '8px 12px', border: 'none', backgroundColor: 'transparent' }}>
+                      {sube.name}
+                    </button>
+                  </td>
+                  <td>
+                    <button style={{ padding: '8px 12px', border: 'none', backgroundColor: 'transparent' }}>
+                      {sube.location}
+                    </button>
+                  </td>
+                  <td>
+                    {sube.phoneNumber ? (
+                      <a href={`tel:+90${sube.phoneNumber}`}>
+                        <button
+                          style={{ padding: '8px 12px', border: 'none', backgroundColor: '#ce9136', color: '#fff' }}
+                        >
+                          {sube.phoneNumber} <FaPhone />
+                        </button>
+                      </a>
+                    ) : (
+                      <button
+                        style={{ padding: '8px 12px', border: 'none', backgroundColor: 'transparent', color: '#fff' }}
+                      >
+                        --
+                      </button>
+                    )}
+                  </td>
+                </tr>
+              ))}
+          </tbody>
+        </table>
+      </TableContainer>
     </>
   );
 };
