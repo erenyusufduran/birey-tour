@@ -110,7 +110,7 @@ export const umreCardDatas = [
   {
     id: 4,
     extraTexts: [
-      'Mekke Otel: Nuh Süreyya / Amjad / Safwat Ajyad Otel',
+      'Mekke Otel: Nur Süreyya / Amjad / Safwat Ajyad Otel',
       '0-2 Yaş: $500 / 3-5 Yaş: $800 / 6-11 Yaş: $1000 (Yataksız)',
       'Medine Otel: Merkeziye Bölgesi',
       'Sabah / Akşam Yemekleri Yarı Açık Büfe',
@@ -169,7 +169,7 @@ export const sevvalUmreCardDatas = [
   {
     id: 2,
     extraTexts: [
-      'Mekke Otel: Sunrise / Nuh Süreyya Otel',
+      'Mekke Otel: Sunrise / Nur Süreyya Otel',
       '0-2 Yaş: $500 / 3-5 Yaş: $800 / 6-11 Yaş: $1000 (Yataksız)',
       'Medine Otel: Merkeziye Bölgesi / Zehra Otel',
       'Sabah / Akşam Yemekleri TABLDOT',
@@ -293,7 +293,7 @@ export const somestrUmreCardDatas = [
   {
     id: 4,
     extraTexts: [
-      'Mekke Otel: Nuh Süreyya / Amjad / Safwat Ajyad Otel',
+      'Mekke Otel: Nur Süreyya / Amjad / Safwat Ajyad Otel',
       '0-2 Yaş: $500 / 3-5 Yaş: $800 / 6-11 Yaş: $1000 (Yataksız)',
       'Medine Otel: Merkeziye Bölgesi',
       'Sabah / Akşam Yemekleri Yarı Açık Büfe',
