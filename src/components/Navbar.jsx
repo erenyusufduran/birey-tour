@@ -40,6 +40,15 @@ function NavBar() {
                 <NavDropdown.Item onClick={() => navigate('/lux-umre', { replace: true })}>Lüx Umre</NavDropdown.Item>
               </NavDropdown>
               <NavDropdown.Divider />
+              <NavDropdown drop="end" title="Sömestr Umre Programları">
+                <NavDropdown.Item onClick={() => navigate('/somestr-umresi/umre', { replace: true })}>
+                  Ekonomik Umre
+                </NavDropdown.Item>
+                <NavDropdown.Item onClick={() => navigate('/somestr-umresi/lux-umre', { replace: true })}>
+                  Lüx Umre
+                </NavDropdown.Item>
+              </NavDropdown>
+              <NavDropdown.Divider />
               <NavDropdown drop="end" title="Ramazan Umre Programları">
                 <NavDropdown.Item onClick={() => navigate('/ramazan-umresi/umre', { replace: true })}>
                   Ekonomik Umre
@@ -54,15 +63,6 @@ function NavBar() {
                   Ekonomik Umre
                 </NavDropdown.Item>
                 <NavDropdown.Item onClick={() => navigate('/sevval-umresi/lux-umre', { replace: true })}>
-                  Lüx Umre
-                </NavDropdown.Item>
-              </NavDropdown>
-              <NavDropdown.Divider />
-              <NavDropdown drop="end" title="Sömestr Umre Programları">
-                <NavDropdown.Item onClick={() => navigate('/somestr-umresi/umre', { replace: true })}>
-                  Ekonomik Umre
-                </NavDropdown.Item>
-                <NavDropdown.Item onClick={() => navigate('/somestr-umresi/lux-umre', { replace: true })}>
                   Lüx Umre
                 </NavDropdown.Item>
               </NavDropdown>

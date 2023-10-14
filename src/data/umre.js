@@ -3,8 +3,8 @@ export const umreCardDatas = [
     id: 1,
     extraTexts: [
       'Mekke Otel: Aziziye, Şişe Bölgesi',
-      'Medine Otel: Merkeziye Bölgesi',
       '0-2 Yaş: $500 / 3-5 Yaş: $800 / 6-11 Yaş: $1000 (Yataksız)',
+      'Medine Otel: Merkeziye Bölgesi',
       'Sabah / Akşam Yemekleri TABLDOT',
     ],
     dayCounts: ['13 Gece - 14 Gün', '19 Gece – 20 Gün', '25 Gece – 26 Gün'],
@@ -39,8 +39,8 @@ export const umreCardDatas = [
     id: 2,
     extraTexts: [
       'Mekke Otel: Mahbesel Cin, Reabaksh Bölgesi',
-      'Medine Otel: Merkeziye Bölgesi',
       '0-2 Yaş: $500 / 3-5 Yaş: $800 / 6-11 Yaş: $1000 (Yataksız)',
+      'Medine Otel: Merkeziye Bölgesi',
       'Sabah / Akşam Yemekleri TABLDOT',
     ],
     dayCounts: ['13 Gece - 14 Gün', '19 Gece – 20 Gün', '25 Gece – 26 Gün'],
@@ -75,8 +75,8 @@ export const umreCardDatas = [
     id: 3,
     extraTexts: [
       'Mekke Otel: Mira Sheab Otel / Murcan Kerim Otel',
-      'Medine Otel: Merkeziye Bölgesi',
       '0-2 Yaş: $500 / 3-5 Yaş: $800 / 6-11 Yaş: $1000 (Yataksız)',
+      'Medine Otel: Merkeziye Bölgesi',
       'Sabah / Akşam Yemekleri TABLDOT',
     ],
     dayCounts: ['13 Gece - 14 Gün', '19 Gece – 20 Gün'],
@@ -111,8 +111,8 @@ export const umreCardDatas = [
     id: 4,
     extraTexts: [
       'Mekke Otel: Nuh Süreyya / Amjad / Safwat Ajyad Otel',
-      'Medine Otel: Merkeziye Bölgesi',
       '0-2 Yaş: $500 / 3-5 Yaş: $800 / 6-11 Yaş: $1000 (Yataksız)',
+      'Medine Otel: Merkeziye Bölgesi',
       'Sabah / Akşam Yemekleri Yarı Açık Büfe',
     ],
     dayCounts: ['13 Gece - 14 Gün', '19 Gece – 20 Gün'],
@@ -150,8 +150,8 @@ export const sevvalUmreCardDatas = [
     id: 1,
     extraTexts: [
       'Mekke Otel: Aziziye, Şişe Bölgesi',
-      'Medine Otel: Merkeziye Bölgesi',
       '0-2 Yaş: $500 / 3-5 Yaş: $800 / 6-11 Yaş: $1000 (Yataksız)',
+      'Medine Otel: Merkeziye Bölgesi',
       'Sabah / Akşam Yemekleri TABLDOT',
     ],
     dayCounts: ['13 Gece - 14 Gün', '19 Gece – 20 Gün'],
@@ -170,8 +170,8 @@ export const sevvalUmreCardDatas = [
     id: 2,
     extraTexts: [
       'Mekke Otel: Sunrise / Nuh Süreyya Otel',
-      'Medine Otel: Merkeziye Bölgesi / Zehra Otel',
       '0-2 Yaş: $500 / 3-5 Yaş: $800 / 6-11 Yaş: $1000 (Yataksız)',
+      'Medine Otel: Merkeziye Bölgesi / Zehra Otel',
       'Sabah / Akşam Yemekleri TABLDOT',
     ],
     dayCounts: ['13 Gece - 14 Gün', '19 Gece – 20 Gün'],
@@ -192,8 +192,8 @@ export const ramazanUmreCardDatas = [
   {
     id: 1,
     extraTexts: [
-      'Sabah / Akşam Yemekleri, Ramazanda İftar ve Sahur TABLDOT',
       'Mekke Otel: Aziziye, Şişe, Bela Kureyşi Bölgesi',
+      'Sabah / Akşam Yemekleri, Ramazanda İftar ve Sahur TABLDOT',
       'Medine Otel: Merkeziye Bölgesi / Ekonomik Oteller',
     ],
     dayCounts: ['38 - 40 Gün'],
@@ -211,8 +211,8 @@ export const ramazanUmreCardDatas = [
   {
     id: 2,
     extraTexts: [
-      'Sabah / Akşam Yemekleri, Ramazanda İftar ve Sahur TABLDOT',
       'Mekke Otel: Aziziye, Şişe, Bela Kureyşi Bölgesi',
+      'Sabah / Akşam Yemekleri, Ramazanda İftar ve Sahur TABLDOT',
       'Medine Otel: Merkeziye Bölgesi / Ekonomik Oteller',
     ],
     dayCounts: ['38 - 40 Gün'],
@@ -234,8 +234,8 @@ export const somestrUmreCardDatas = [
     id: 1,
     extraTexts: [
       'Mekke Otel: Aziziye, Şişe Bölgesi',
-      'Medine Otel: Merkeziye Bölgesi',
       '0-2 Yaş: $500 / 3-5 Yaş: $800 / 6-11 Yaş: $1000 (Yataksız)',
+      'Medine Otel: Merkeziye Bölgesi',
       'Sabah / Akşam Yemekleri TABLDOT',
     ],
     dayCounts: ['13 Gece - 14 Gün', '19 Gece – 20 Gün', '25 Gece – 26 Gün'],
@@ -254,8 +254,8 @@ export const somestrUmreCardDatas = [
     id: 2,
     extraTexts: [
       'Mekke Otel: Mahbesel Cin, Reabaksh Bölgesi',
-      'Medine Otel: Merkeziye Bölgesi',
       '0-2 Yaş: $500 / 3-5 Yaş: $800 / 6-11 Yaş: $1000 (Yataksız)',
+      'Medine Otel: Merkeziye Bölgesi',
       'Sabah / Akşam Yemekleri TABLDOT',
     ],
     dayCounts: ['13 Gece - 14 Gün', '19 Gece – 20 Gün', '25 Gece – 26 Gün'],
@@ -274,8 +274,8 @@ export const somestrUmreCardDatas = [
     id: 3,
     extraTexts: [
       'Mekke Otel: Mira Sheab Otel / Murcan Kerim Otel',
-      'Medine Otel: Merkeziye Bölgesi',
       '0-2 Yaş: $500 / 3-5 Yaş: $800 / 6-11 Yaş: $1000 (Yataksız)',
+      'Medine Otel: Merkeziye Bölgesi',
       'Sabah / Akşam Yemekleri TABLDOT',
     ],
     dayCounts: ['13 Gece - 14 Gün', '19 Gece – 20 Gün'],
@@ -294,8 +294,8 @@ export const somestrUmreCardDatas = [
     id: 4,
     extraTexts: [
       'Mekke Otel: Nuh Süreyya / Amjad / Safwat Ajyad Otel',
-      'Medine Otel: Merkeziye Bölgesi',
       '0-2 Yaş: $500 / 3-5 Yaş: $800 / 6-11 Yaş: $1000 (Yataksız)',
+      'Medine Otel: Merkeziye Bölgesi',
       'Sabah / Akşam Yemekleri Yarı Açık Büfe',
     ],
     dayCounts: ['13 Gece - 14 Gün', '19 Gece – 20 Gün'],
