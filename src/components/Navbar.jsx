@@ -41,12 +41,13 @@ const StyledLinkComp = ({ to, setExpanded, children }) => {
 
   return (
     <Nav.Link
+      style={{ color: '#000' }}
       onClick={() => {
         navigate(to, { replace: true });
         setExpanded(false);
       }}
     >
-      <NavItems>{children}</NavItems>
+      <NavItems style={{ color: '#000' }}>{children}</NavItems>
     </Nav.Link>
   );
 };
@@ -56,12 +57,13 @@ const StyledDropdownComp = ({ to, setExpanded, children }) => {
 
   return (
     <NavDropdown.Item
+      style={{ color: '#000' }}
       onClick={() => {
         navigate(to, { replace: true });
         setExpanded(false);
       }}
     >
-      <NavItems>{children}</NavItems>
+      <NavItems style={{ color: '#000' }}>{children}</NavItems>
     </NavDropdown.Item>
   );
 };
