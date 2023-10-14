@@ -26,7 +26,7 @@ const UmrePage = ({ cardDatas, headerText }) => {
       extraText = false;
       break;
   }
-
+//s
   return (
     <>
       <Masthead headerText={headerText} headerColor="white" img="/umre_header.jpg" />
