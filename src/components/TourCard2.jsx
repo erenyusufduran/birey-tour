@@ -85,6 +85,10 @@ const StyledDates = styled.p`
     display: 'flex';
     justify-content: 'center';
   }
+
+  @media screen and (max-width: 600px) {
+    font-size: 0.9rem !important;
+  }
 `;
 
 const StyledRoomsNights = styled(StyledDates)`
