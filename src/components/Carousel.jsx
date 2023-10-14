@@ -1,11 +1,23 @@
 /* eslint-disable react/prop-types */
 import { useEffect, useState } from 'react';
+import styled from 'styled-components';
+import { FaArrowLeft, FaArrowRight } from 'react-icons/fa';
+
 import Masthead from './Masthead';
 
 const imageData = [
   { headerText: 'Umre ve Hac Programları', pText: 'Umre Programları için bize başvurun', img: 'home_header.jpg' },
   { headerText: 'Umre Programları', pText: 'Umre Programları', img: 'home_2_header.jpg' },
 ];
+
+const SButton = styled.button`
+  position: absolute;
+  top: 50%;
+  border: none;
+  background-color: transparent;
+  color: #fff;
+  font-size: 2em;
+`;
 
 const Carousel = () => {
   const [change, setChange] = useState(0);
@@ -20,6 +32,14 @@ const Carousel = () => {
     return () => clearInterval(interval);
   }, [change, mouseEntered]);
 
+  const changeToLeft = () => {
+    setChange((change) => (change === 0 ? imageData.length * 2 - 1 : change - 1));
+  };
+
+  const changeToRight = () => {
+    setChange((change) => (change === imageData.length * 2 ? 0 : change + 1));
+  };
+
   return (
     <div
       className="carousel slide"
@@ -27,19 +47,20 @@ const Carousel = () => {
       onMouseLeave={() => setMouseEntered(false)}
     >
       <div className="carousel-inner">
-        <div className={`carousel-item ${change % imageData.length === 0 && 'active'}`}>
-          <Masthead headerText={imageData[0].headerText} pText={imageData[0].pText} img={imageData[0].img} />
-        </div>
-        <div className={`carousel-item ${change % imageData.length === 1 && 'active'}`}>
-        <Masthead headerText={imageData[1].headerText} pText={imageData[1].pText} img={imageData[1].img} />
-        </div>
-        {/* <div className={`carousel-item ${change % imageData.length === 2 && 'active'}`}>
-          <Masthead
-            headerText="Hac Programları"
-            pText="A layout for a landing page"
-            img="home_2_header.jpg"
-          />
-        </div> */}
+        {imageData.length &&
+          imageData.map((data, i) => (
+            <div key={i} className={`carousel-item ${change % imageData.length === i ? 'active' : ''}`}>
+              <div>
+                <Masthead headerText={data.headerText} pText={data.pText} img={data.img} />
+              </div>
+              <SButton onClick={changeToLeft} style={{ left: 0 }}>
+                <FaArrowLeft />
+              </SButton>
+              <SButton onClick={changeToRight} style={{ right: 0 }}>
+                <FaArrowRight />
+              </SButton>
+            </div>
+          ))}
       </div>
     </div>
   );

@@ -3,8 +3,8 @@ export const luxUmreCardDatas = [
     id: 1,
     extraTexts: [
       'Mekke Otel: Anjum / Sharaton / Marrioft Otel',
-      'Medine Otel: Emaar Mektan / Leader Otel',
       '0-2 Yaş: $500 / 3-5 Yaş: $800 / 6-11 Yaş: $1000 (Yataksız)',
+      'Medine Otel: Emaar Mektan / Leader Otel',
       'Sabah / Akşam Yemekleri Açık Büfe',
     ],
     dayCounts: ['9 Gece - 10 Gün', '13 Gece – 14 Gün'],
@@ -14,7 +14,6 @@ export const luxUmreCardDatas = [
     fourPeopleRoomPrices: ['-', '-'],
     dates: {
       entries: [
-        '24 EKİM 2023',
         '09 KASIM 2023',
         '16 KASIM 2023',
         '20 KASIM 2023',
@@ -38,8 +37,8 @@ export const luxUmreCardDatas = [
     id: 2,
     extraTexts: [
       'Mekke Otel: Le Meridien / Ejyad Makarim / Elaf Meşair Otel',
-      'Medine Otel: Royal İnn / Emaar Royal Otel',
       '0-2 Yaş: $500 / 3-5 Yaş: $800 / 6-11 Yaş: $1000 (Yataksız)',
+      'Medine Otel: Royal İnn / Emaar Royal Otel',
       'Sabah / Akşam Yemekleri Açık Büfe',
     ],
     dayCounts: ['9 Gece - 10 Gün', '13 Gece – 14 Gün'],
@@ -49,7 +48,6 @@ export const luxUmreCardDatas = [
     fourPeopleRoomPrices: ['-', '-'],
     dates: {
       entries: [
-        '24 EKİM 2023',
         '09 KASIM 2023',
         '16 KASIM 2023',
         '20 KASIM 2023',
@@ -73,8 +71,8 @@ export const luxUmreCardDatas = [
     id: 3,
     extraTexts: [
       'Mekke Otel: Orkid Safwa / Ghufran / Swiss Otel',
-      'Medine Otel: Royal İnn / Emaar Royal Otel',
       '0-2 Yaş: $500 / 3-5 Yaş: $800 / 6-11 Yaş: $1000 (Yataksız)',
+      'Medine Otel: Royal İnn / Emaar Royal Otel',
       'Sabah / Akşam Yemekleri Açık Büfe',
     ],
     dayCounts: ['9 Gece - 10 Gün', '11 Gece – 12 Gün'],
@@ -84,7 +82,6 @@ export const luxUmreCardDatas = [
     fourPeopleRoomPrices: ['-', '-'],
     dates: {
       entries: [
-        '24 EKİM 2023',
         '09 KASIM 2023',
         '16 KASIM 2023',
         '20 KASIM 2023',
@@ -111,8 +108,8 @@ export const sevvalLuxUmreCardDatas = [
     id: 1,
     extraTexts: [
       'Mekke Otel: Anjum / Sharaton / Marriot Otel',
-      'Medine Otel: Emaar Maktan / Leader Otel',
       '0-2 Yaş: $500 / 3-5 Yaş: $800 / 6-11 Yaş: $1000 (Yataksız)',
+      'Medine Otel: Emaar Maktan / Leader Otel',
       'Sabah / Akşam Yemekleri Açık Büfe',
     ],
     dayCounts: ['9 Gece - 10 Gün', '13 Gece – 14 Gün'],
@@ -130,8 +127,8 @@ export const sevvalLuxUmreCardDatas = [
     id: 2,
     extraTexts: [
       'Mekke Otel: Orkid Safwa / Ghufran / Swiss Otel',
-      'Medine Otel: Royal Inn / Emaar Royal Otel',
       '0-2 Yaş: $500 / 3-5 Yaş: $800 / 6-11 Yaş: $1000 (Yataksız)',
+      'Medine Otel: Royal Inn / Emaar Royal Otel',
       'Sabah / Akşam Yemekleri Açık Büfe',
     ],
     dayCounts: ['9 Gece - 10 Gün', '11 Gece – 12 Gün'],
@@ -212,14 +209,14 @@ export const somestrLuxUmreCardDatas = [
     id: 1,
     extraTexts: [
       'Mekke Otel: Anjum / Sharaton / Marrioft Otel',
-      'Medine Otel: Emaar Mektan / Leader Otel',
       '0-2 Yaş: $500 / 3-5 Yaş: $800 / 6-11 Yaş: $1000 (Yataksız)',
+      'Medine Otel: Emaar Mektan / Leader Otel',
       'Sabah / Akşam Yemekleri Açık Büfe',
     ],
     dayCounts: ['9 Gece - 10 Gün', '13 Gece – 14 Gün'],
     nightsDays: ['6 Gece Mekke / 3 Gece Medine', '10 Gece Mekke / 3 Gece Medine'],
-    twoPeopleRoomPrices: ['1850', '2150'],
-    threePeopleRoomPrices: ['1800', '2100'],
+    twoPeopleRoomPrices: ['1950', '2250'],
+    threePeopleRoomPrices: ['1900', '2200'],
     fourPeopleRoomPrices: ['-', '-'],
     dates: {
       entries: ['16 OCAK 2024', '21 OCAK 2024', '23 OCAK 2024'],
@@ -231,14 +228,14 @@ export const somestrLuxUmreCardDatas = [
     id: 2,
     extraTexts: [
       'Mekke Otel: Le Meridien / Ejyad Makarim / Elaf Meşair Otel',
-      'Medine Otel: Royal İnn / Emaar Royal Otel',
       '0-2 Yaş: $500 / 3-5 Yaş: $800 / 6-11 Yaş: $1000 (Yataksız)',
+      'Medine Otel: Royal İnn / Emaar Royal Otel',
       'Sabah / Akşam Yemekleri Açık Büfe',
     ],
     dayCounts: ['9 Gece - 10 Gün', '13 Gece – 14 Gün'],
     nightsDays: ['6 Gece Mekke / 3 Gece Medine', '10 Gece Mekke / 3 Gece Medine'],
-    twoPeopleRoomPrices: ['2050', '2550'],
-    threePeopleRoomPrices: ['2000', '2500'],
+    twoPeopleRoomPrices: ['2150', '2650'],
+    threePeopleRoomPrices: ['2100', '2600'],
     fourPeopleRoomPrices: ['-', '-'],
     dates: {
       entries: ['16 OCAK 2024', '21 OCAK 2024', '23 OCAK 2024'],
@@ -250,14 +247,14 @@ export const somestrLuxUmreCardDatas = [
     id: 3,
     extraTexts: [
       'Mekke Otel: Orkid Safwa / Ghufran / Swiss Otel',
-      'Medine Otel: Royal İnn / Emaar Royal Otel',
       '0-2 Yaş: $500 / 3-5 Yaş: $800 / 6-11 Yaş: $1000 (Yataksız)',
+      'Medine Otel: Royal İnn / Emaar Royal Otel',
       'Sabah / Akşam Yemekleri Açık Büfe',
     ],
     dayCounts: ['9 Gece - 10 Gün', '11 Gece – 12 Gün'],
     nightsDays: ['6 Gece Mekke / 3 Gece Medine', '8 Gece Mekke / 3 Gece Medine'],
-    twoPeopleRoomPrices: ['2400', '2750'],
-    threePeopleRoomPrices: ['2350', '2700'],
+    twoPeopleRoomPrices: ['2500', '2850'],
+    threePeopleRoomPrices: ['2450', '2800'],
     fourPeopleRoomPrices: ['-', '-'],
     dates: {
       entries: ['16 OCAK 2024', '21 OCAK 2024', '23 OCAK 2024'],

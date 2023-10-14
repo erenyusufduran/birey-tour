@@ -19,12 +19,32 @@ const StyledHR = styled.hr`
 `;
 
 const StyledImg = styled.img`
-  width: 18em;
-  margin-left: 2em;
-  transition: 1s ease-in-out;
+  transition: 1s ease-in;
+  margin-left: 1em;
 
-  @media screen and (max-width: 1400px) and (min-width: 1200px) {
-    margin-left: 0.5em;
+  @media screen and (min-width: 1800px) {
+    width: 25em;
+  }
+
+  @media screen and (min-width: 1600px) and (max-width: 1799px) {
+    width: 22em;
+  }
+
+  @media screen and (min-width: 1500px) and (max-width: 1599px) {
+    width: 20em;
+  }
+
+  @media screen and (min-width: 1401px) and (max-width: 1499px) {
+    width: 18em;
+  }
+
+  @media screen and (max-width: 1400px) {
+    width: 16em;
+  }
+
+  @media screen and (max-width: 1200px) {
+    width: 80%;
+    margin-left: 0;
   }
 `;
 
@@ -35,9 +55,14 @@ const StyledMini = styled.p`
 `;
 
 const StyledSectionMini = styled.p`
-  font-size: 12px;
   font-weight: bold;
-  font-size: 0.9em;
+  margin-top: auto;
+  font-size: ${(props) =>
+    props.type === 'mobilenone' ? '14px !important' : props.type === 'bottom' ? '14px !important' : '20px !important'};
+
+  @media screen and (max-width: 1200px) {
+    display: ${(props) => (props.type === 'mobilenone' ? 'none' : '')};
+  }
 `;
 
 const StyledH7 = styled(StyledMini)`
@@ -145,6 +170,7 @@ const TourCard2 = ({ tourCard }) => {
     extraTexts,
     dayCounts,
     nightsDays,
+    medineDays,
     twoPeopleRoomPrices,
     threePeopleRoomPrices,
     fourPeopleRoomPrices,
@@ -165,6 +191,11 @@ const TourCard2 = ({ tourCard }) => {
         <StyledSectionMini style={{ fontSize: '20px' }} className="text-white text-uppercase">
           {hotelType}
         </StyledSectionMini>
+        {medineDays && (
+          <StyledSectionMini type="mobilenone" style={{ fontSize: '20px' }} className="text-white text-uppercase">
+            {medineDays} Gece Medine
+          </StyledSectionMini>
+        )}
       </StyledSection>
       <section>
         <div className="text-center text-xl-start mt-3">
@@ -184,39 +215,26 @@ const TourCard2 = ({ tourCard }) => {
                     dayCounts.map((text, i) => {
                       if (i === 0)
                         return (
-                          <span key={i}>
-                            <StyledMini>{text}</StyledMini>
-                            <p style={{ fontSize: '10px', marginBottom: 0, marginTop: '-14px' }}>{nightsDays[i]}</p>
-                          </span>
-                        );
-                      else if (i === 1)
-                        return (
-                          <span key={i}>
-                            <StyledHR style={{ marginBottom: '-4px' }} />
-                            <div
-                              style={{
-                                display: 'flex',
-                                flexDirection: 'column',
-                                justifyContent: 'center',
-                                alignItems: 'center',
-                              }}
-                            >
-                              <StyledMini style={{ marginTop: '30px' }}>{text}</StyledMini>
-                              <p style={{ fontSize: '10px', marginBottom: 0, marginTop: '-15px' }}>{nightsDays[i]}</p>
+                          <StyledRoomsNights style={{ marginBottom: '7.4px' }} key={i}>
+                            <div>
+                              <MobileNone>{dayCounts[i]}:</MobileNone>
+                              <StyledMini key={i}>{text}</StyledMini>{' '}
                             </div>
-                          </span>
+                            <MobileNone style={{ fontSize: '.8em' }}>({nightsDays[i]})</MobileNone>
+                          </StyledRoomsNights>
                         );
-                      else if (i === 2)
+                      else
                         return (
-                          <>
+                          <span key={i}>
                             <StyledHR style={{ marginBottom: '-4px' }} />
-                            <StyledMini style={{ marginTop: '20px' }} key={i}>
-                              {text}
-                            </StyledMini>
-                            <p style={{ fontSize: '10px', marginBottom: '10px', marginTop: '-15px' }}>
-                              {nightsDays[i]}
-                            </p>
-                          </>
+                            <StyledRoomsNights style={{ marginTop: '20px' }}>
+                              <div>
+                                <MobileNone>{dayCounts[i]}: </MobileNone>
+                                <StyledMini key={i}>{text}</StyledMini>
+                              </div>
+                              <MobileNone style={{ fontSize: '.8em' }}>({nightsDays[i]})</MobileNone>
+                            </StyledRoomsNights>
+                          </span>
                         );
                     })}
                 </StyledProgramsCol>
@@ -323,8 +341,8 @@ const TourCard2 = ({ tourCard }) => {
               </StyledRow>
             </StyledCols>
 
-            <StyledCols className="col-lg-12 col-xl-3 col-xxl-3 mb-md-0 mb-4">
-              <div style={dates.entries.length <= 5 ? { margin: '50px auto' } : { margin: 'inherit' }}>
+            <StyledCols className="col-lg-12 col-xl-3 col-xxl-3  my-auto">
+              <div>
                 <StyledH6 className="mb-3 text-uppercase fw-bold">GİDİŞ TARİHLERİ</StyledH6>
                 {dates.entries.map((entry, i) => {
                   if (dateLength <= 5) {
@@ -355,15 +373,17 @@ const TourCard2 = ({ tourCard }) => {
       </section>
 
       <StyledSectionBottom
-        className="d-flex text-white justify-content-between pb-0 p-3"
+        className="d-flex text-white justify-content-center pb-0 p-3"
         style={{ backgroundColor: '#0E2954' }}
       >
-        {extraTexts.length &&
-          extraTexts.map((text, i) => (
-            <StyledSectionMini className="text-white" key={i}>
-              {text}
-            </StyledSectionMini>
-          ))}
+        <div className="row">
+          {extraTexts.length &&
+            extraTexts.map((text, i) => (
+              <StyledSectionMini type="bottom" className="text-white col-xl-6 col-md-12" key={i}>
+                {text}
+              </StyledSectionMini>
+            ))}
+        </div>
       </StyledSectionBottom>
     </StyledCardCont>
   );
