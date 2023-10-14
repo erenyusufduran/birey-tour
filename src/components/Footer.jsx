@@ -24,9 +24,9 @@ const NavLinkComponent = ({ to, children }) => {
     </p>
   );
 };
-const Footer = () => {
+const Footer = ({ onClick }) => {
   return (
-    <footer className="text-center text-white text-lg-start mt-5" style={{ backgroundColor: '#0E2954' }}>
+    <footer onClick={onClick} className="text-center text-white text-lg-start mt-5" style={{ backgroundColor: '#0E2954' }}>
       {/* 2E4374, 213555, 0E2954, 213555, 27374D */}
       <section className="d-flex text-white justify-content-between p-4" style={{ backgroundColor: '#ce9136' }}>
         <div className="me-5">
