@@ -99,14 +99,14 @@ const Footer = () => {
                 <FaHome className="me-3" /> Söğütlüçeşme Caddesi, Beyciğim Sk. Mutlu Apt. No: 1/1, Kadıköy/İstanbul
               </p>
               <p>
-                <FaEnvelope className="me-3" /> bireytour@info.com
+                <FaEnvelope className="me-3" /> bireytour@bireytur.com
               </p>
               <p>
                 <FaPhone className="me-3" /> 0532 513 2858
               </p>
-              {/* <p>
-                <FaPrint className="me-3" /> 01 234 567 89
-              </p> */}
+              <p>
+                <FaPhone className="me-3" /> 0216 348 4900
+              </p>
             </div>
           </div>
         </div>
