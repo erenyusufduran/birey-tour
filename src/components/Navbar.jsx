@@ -41,12 +41,13 @@ const StyledLinkComp = ({ to, setExpanded, children }) => {
 
   return (
     <Nav.Link
+      style={{ color: '#000' }}
       onClick={() => {
         navigate(to, { replace: true });
         setExpanded(false);
       }}
     >
-      <NavItems>{children}</NavItems>
+      <NavItems style={{ color: '#000' }}>{children}</NavItems>
     </Nav.Link>
   );
 };
@@ -56,15 +57,22 @@ const StyledDropdownComp = ({ to, setExpanded, children }) => {
 
   return (
     <NavDropdown.Item
+      style={{ color: '#000' }}
       onClick={() => {
         navigate(to, { replace: true });
         setExpanded(false);
       }}
     >
-      <NavItems>{children}</NavItems>
+      <NavItems style={{ color: '#000' }}>{children}</NavItems>
     </NavDropdown.Item>
   );
 };
+
+const TabletNoneAndMobilDisplay = styled.span`
+  @media screen and (max-width: 1400px) and (min-width: 1000px) {
+    display: none;
+  }
+`;
 
 function NavBar({ expanded, setExpanded }) {
   const navigate = useNavigate();
@@ -158,7 +166,10 @@ function NavBar({ expanded, setExpanded }) {
 
             <NavItems style={{ backgroundColor: '#ce9136' }}>
               <a style={{ color: '#fff', textDecoration: 'none' }} href={`tel:+905325132858`}>
-                Bizi Ara: 5325132858 <FaPhone style={{ marginLeft: '5px', paddingBottom: '5px' }} />
+                <TabletNoneAndMobilDisplay>Bizi Ara:</TabletNoneAndMobilDisplay> 5325132858
+                <TabletNoneAndMobilDisplay>
+                  <FaPhone style={{ marginLeft: '5px', paddingBottom: '5px' }} />
+                </TabletNoneAndMobilDisplay>
               </a>
             </NavItems>
           </StyledForm>

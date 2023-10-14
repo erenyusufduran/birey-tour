@@ -11,7 +11,7 @@ const ForeignToursPage = () => {
 
   return (
     <>
-      <Masthead headerText="Yurtdışı Turları" pText="A great starter layout for a landing page" img="/abroad_header.jpg" />
+      <Masthead headerText="Yurtdışı Turları" img="/abroad_header.jpg" />
       {foreignCardDatas.length ? (
         foreignCardDatas.map((cardData) => <TourCard2 key={cardData.id} tourCard={cardData} />)
       ) : (

@@ -81,9 +81,13 @@ const StyledDates = styled.p`
   font-size: 0.85em;
 
   @media screen and (max-width: 1200px) {
-    font-size: 1.2rem !important;
+    font-size: 1rem !important;
     display: 'flex';
     justify-content: 'center';
+  }
+
+  @media screen and (max-width: 600px) {
+    font-size: 0.9rem !important;
   }
 `;
 
