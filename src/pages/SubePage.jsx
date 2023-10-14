@@ -78,6 +78,12 @@ const MobileNone = styled.th`
   }
 `;
 
+const MobileNoneSpan = styled.span`
+  @media screen and (max-width: 600px) {
+    display: none;
+  }
+`;
+
 const SubePage = () => {
   const { pathname } = useLocation();
   useScrollToTop(pathname, 'Şubelerimiz');
@@ -116,7 +122,10 @@ const SubePage = () => {
                         <button
                           style={{ padding: '8px 12px', border: 'none', backgroundColor: '#ce9136', color: '#fff' }}
                         >
-                          {sube.phoneNumber} <FaPhone />
+                          {sube.phoneNumber}{' '}
+                          <MobileNoneSpan>
+                            <FaPhone />
+                          </MobileNoneSpan>
                         </button>
                       </a>
                     ) : (
