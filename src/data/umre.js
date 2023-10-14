@@ -15,7 +15,6 @@ export const umreCardDatas = [
     fourPeopleRoomPrices: ['1350', '1400', '1500'],
     dates: {
       entries: [
-        '24 EKİM 2023',
         '09 KASIM 2023',
         '16 KASIM 2023',
         '20 KASIM 2023',
@@ -51,7 +50,6 @@ export const umreCardDatas = [
     fourPeopleRoomPrices: ['1400', '1475', '1550'],
     dates: {
       entries: [
-        '24 EKİM 2023',
         '09 KASIM 2023',
         '16 KASIM 2023',
         '20 KASIM 2023',
@@ -87,7 +85,6 @@ export const umreCardDatas = [
     fourPeopleRoomPrices: ['1450', '1550'],
     dates: {
       entries: [
-        '24 EKİM 2023',
         '09 KASIM 2023',
         '16 KASIM 2023',
         '20 KASIM 2023',
@@ -123,7 +120,6 @@ export const umreCardDatas = [
     fourPeopleRoomPrices: ['1650', '2000'],
     dates: {
       entries: [
-        '24 EKİM 2023',
         '09 KASIM 2023',
         '16 KASIM 2023',
         '20 KASIM 2023',

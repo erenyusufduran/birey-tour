@@ -14,7 +14,6 @@ export const luxUmreCardDatas = [
     fourPeopleRoomPrices: ['-', '-'],
     dates: {
       entries: [
-        '24 EKİM 2023',
         '09 KASIM 2023',
         '16 KASIM 2023',
         '20 KASIM 2023',
@@ -49,7 +48,6 @@ export const luxUmreCardDatas = [
     fourPeopleRoomPrices: ['-', '-'],
     dates: {
       entries: [
-        '24 EKİM 2023',
         '09 KASIM 2023',
         '16 KASIM 2023',
         '20 KASIM 2023',
@@ -84,7 +82,6 @@ export const luxUmreCardDatas = [
     fourPeopleRoomPrices: ['-', '-'],
     dates: {
       entries: [
-        '24 EKİM 2023',
         '09 KASIM 2023',
         '16 KASIM 2023',
         '20 KASIM 2023',
@@ -218,8 +215,8 @@ export const somestrLuxUmreCardDatas = [
     ],
     dayCounts: ['9 Gece - 10 Gün', '13 Gece – 14 Gün'],
     nightsDays: ['6 Gece Mekke / 3 Gece Medine', '10 Gece Mekke / 3 Gece Medine'],
-    twoPeopleRoomPrices: ['1850', '2150'],
-    threePeopleRoomPrices: ['1800', '2100'],
+    twoPeopleRoomPrices: ['1950', '2250'],
+    threePeopleRoomPrices: ['1900', '2200'],
     fourPeopleRoomPrices: ['-', '-'],
     dates: {
       entries: ['16 OCAK 2024', '21 OCAK 2024', '23 OCAK 2024'],
@@ -237,8 +234,8 @@ export const somestrLuxUmreCardDatas = [
     ],
     dayCounts: ['9 Gece - 10 Gün', '13 Gece – 14 Gün'],
     nightsDays: ['6 Gece Mekke / 3 Gece Medine', '10 Gece Mekke / 3 Gece Medine'],
-    twoPeopleRoomPrices: ['2050', '2550'],
-    threePeopleRoomPrices: ['2000', '2500'],
+    twoPeopleRoomPrices: ['2150', '2650'],
+    threePeopleRoomPrices: ['2100', '2600'],
     fourPeopleRoomPrices: ['-', '-'],
     dates: {
       entries: ['16 OCAK 2024', '21 OCAK 2024', '23 OCAK 2024'],
@@ -256,8 +253,8 @@ export const somestrLuxUmreCardDatas = [
     ],
     dayCounts: ['9 Gece - 10 Gün', '11 Gece – 12 Gün'],
     nightsDays: ['6 Gece Mekke / 3 Gece Medine', '8 Gece Mekke / 3 Gece Medine'],
-    twoPeopleRoomPrices: ['2400', '2750'],
-    threePeopleRoomPrices: ['2350', '2700'],
+    twoPeopleRoomPrices: ['2500', '2850'],
+    threePeopleRoomPrices: ['2450', '2800'],
     fourPeopleRoomPrices: ['-', '-'],
     dates: {
       entries: ['16 OCAK 2024', '21 OCAK 2024', '23 OCAK 2024'],
