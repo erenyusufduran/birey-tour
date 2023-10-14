@@ -10,9 +10,27 @@ const UmrePage = ({ cardDatas, headerText }) => {
   const { pathname } = useLocation();
   useScrollToTop(pathname, 'Umre');
 
+  let extraText;
+  switch (headerText) {
+    case 'Sömestr Umresi':
+      extraText = (
+        <span>
+          15 Aralık 2023&apos;e kadar olan ödemelerde <span className="fw-bold">100$</span> indirim.
+        </span>
+      );
+      break;
+    case 'Şevval Umresi':
+      extraText = <span>Fiyatlar 1 Şubat 2024&apos;e kadar geçerlidir.</span>;
+      break;
+    default:
+      extraText = false;
+      break;
+  }
+
   return (
     <>
       <Masthead headerText={headerText} headerColor="white" img="/umre_header.jpg" />
+      {extraText && <h2 className="text-center mt-5">{extraText}</h2>}
       {cardDatas.length ? (
         cardDatas.map((umreCardData) => <TourCard2 key={umreCardData.id} tourCard={umreCardData} />)
       ) : (

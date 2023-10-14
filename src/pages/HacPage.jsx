@@ -10,6 +10,8 @@ const HacPage = () => {
   const { pathname } = useLocation();
   useScrollToTop(pathname, 'Hac');
 
+  const extraText = <span>2024 Hac Organizasyonu ile ilgili bilgiler çok yakında açıklanacaktır.</span>;
+
   return (
     <>
       <Masthead headerText="HAC" headerColor="#fff" img="/hac_header.jpg" />
@@ -17,7 +19,8 @@ const HacPage = () => {
         hacCardDatas.map((cardData) => <TourCard2 key={cardData.id} tourCard={cardData} />)
       ) : (
         <div className="conteiner text-center mt-5">
-          <h2>Şu anda herhangi bir tur bulunmamakta</h2>
+          {extraText && <h2 className="text-center mt-5">{extraText}</h2>}
+
           <SNavLink to="/">
             <h4 style={{ cursor: 'pointer', color: '#333' }}>Diğer turlarımıza göz atmak için tıkla</h4>
           </SNavLink>
