@@ -51,6 +51,21 @@ const StyledLinkComp = ({ to, setExpanded, children }) => {
   );
 };
 
+const StyledDropdownComp = ({ to, setExpanded, children }) => {
+  const navigate = useNavigate();
+
+  return (
+    <NavDropdown.Item
+      onClick={() => {
+        navigate(to, { replace: true });
+        setExpanded(false);
+      }}
+    >
+      <NavItems>{children}</NavItems>
+    </NavDropdown.Item>
+  );
+};
+
 function NavBar({ expanded, setExpanded }) {
   const navigate = useNavigate();
 
@@ -62,8 +77,8 @@ function NavBar({ expanded, setExpanded }) {
         </Navbar.Brand>
         <Navbar.Toggle onClick={() => setExpanded((expanded) => (expanded ? false : 'expanded'))} />
         <Navbar.Collapse className="ms-lg-5" id="navbarScroll">
-          <Nav className="me-auto my-2 my-lg-0" /*style={{ maxHeight: '200px' }}*/ navbarScroll> 
-          {/* FOR SCROLLBAR */}
+          <Nav className="me-auto my-2 my-lg-0" /*style={{ maxHeight: '200px' }}*/ navbarScroll>
+            {/* FOR SCROLLBAR */}
             <StyledLinkComp to="/" setExpanded={setExpanded}>
               Anasayfa
             </StyledLinkComp>
@@ -74,42 +89,43 @@ function NavBar({ expanded, setExpanded }) {
 
             <StyledNavDropdown title="Umre">
               <StyledNavDropdown drop="end" title="Normal Dönem Umre Programları">
-                <NavDropdown.Item onClick={() => navigate('/umre', { replace: true })}>
-                  <NavItems>Ekonomik Umre</NavItems>
-                </NavDropdown.Item>
-                <NavDropdown.Item onClick={() => navigate('/lux-umre', { replace: true })}>
-                  <NavItems>Lüx Umre</NavItems>
-                </NavDropdown.Item>
+                <StyledDropdownComp to="/umre" setExpanded={setExpanded}>
+                  Ekonomik Umre
+                </StyledDropdownComp>
+
+                <StyledDropdownComp to="/lux-umre" setExpanded={setExpanded}>
+                  Lüx Umre
+                </StyledDropdownComp>
               </StyledNavDropdown>
               <NavDropdown.Divider />
 
               <StyledNavDropdown drop="end" title="Sömestr Umre Programları">
-                <NavDropdown.Item onClick={() => navigate('/somestr-umresi/umre', { replace: true })}>
-                  <NavItems>Ekonomik Umre</NavItems>
-                </NavDropdown.Item>
-                <NavDropdown.Item onClick={() => navigate('/somestr-umresi/lux-umre', { replace: true })}>
-                  <NavItems>Lüx Umre</NavItems>
-                </NavDropdown.Item>
+                <StyledDropdownComp to="/somestr-umresi/umre" setExpanded={setExpanded}>
+                  Ekonomik Umre
+                </StyledDropdownComp>
+                <StyledDropdownComp to="/somestr-umresi/lux-umre" setExpanded={setExpanded}>
+                  Lüx Umre
+                </StyledDropdownComp>
               </StyledNavDropdown>
               <NavDropdown.Divider />
 
               <StyledNavDropdown drop="end" title="Ramazan Umre Programları">
-                <NavDropdown.Item onClick={() => navigate('/ramazan-umresi/umre', { replace: true })}>
-                  <NavItems>Ekonomik Umre</NavItems>
-                </NavDropdown.Item>
-                <NavDropdown.Item onClick={() => navigate('/ramazan-umresi/lux-umre', { replace: true })}>
-                  <NavItems>Lüx Umre</NavItems>
-                </NavDropdown.Item>
+                <StyledDropdownComp to="/ramazan-umresi/lux-umre" setExpanded={setExpanded}>
+                  Ekonomik Umre
+                </StyledDropdownComp>
+                <StyledDropdownComp to="/ramazan-umresi/lux-umre" setExpanded={setExpanded}>
+                  Lüx Umre
+                </StyledDropdownComp>
               </StyledNavDropdown>
               <NavDropdown.Divider />
 
               <StyledNavDropdown drop="end" title="Şevval Umre Programları">
-                <NavDropdown.Item onClick={() => navigate('/sevval-umresi/umre', { replace: true })}>
-                  <NavItems>Ekonomik Umre</NavItems>
-                </NavDropdown.Item>
-                <NavDropdown.Item onClick={() => navigate('/sevval-umresi/lux-umre', { replace: true })}>
-                  <NavItems>Lüx Umre</NavItems>
-                </NavDropdown.Item>
+                <StyledDropdownComp to="/sevval-umresi/lux-umre" setExpanded={setExpanded}>
+                  Ekonomik Umre
+                </StyledDropdownComp>
+                <StyledDropdownComp to="/sevval-umresi/lux-umre" setExpanded={setExpanded}>
+                  Lüx Umre
+                </StyledDropdownComp>
               </StyledNavDropdown>
             </StyledNavDropdown>
 
