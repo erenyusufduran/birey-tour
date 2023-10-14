@@ -38,13 +38,13 @@ const Footer = () => {
             <FaFacebookF />
           </StyledHover>
           <StyledHover href="" className="me-4">
+            <FaInstagram />
+          </StyledHover>
+          <StyledHover href="" className="me-4">
             <FaTwitter />
           </StyledHover>
           <StyledHover href="" className="me-4">
             <FaGoogle />
-          </StyledHover>
-          <StyledHover href="" className="me-4">
-            <FaInstagram />
           </StyledHover>
         </div>
       </section>
@@ -70,7 +70,9 @@ const Footer = () => {
                 style={{ width: '60px', backgroundColor: '#333', height: '2px' }}
               />
               <NavLinkComponent /*to="/hakkimizda"*/>A Grubu Seyahat Acentası</NavLinkComponent>
-              <NavLinkComponent /*to="/subelerimiz"*/>Belge No: <span style={{fontWeight: "bold"}}>2813</span></NavLinkComponent>
+              <NavLinkComponent /*to="/subelerimiz"*/>
+                Belge No: <span style={{ fontWeight: 'bold' }}>2813</span>
+              </NavLinkComponent>
               <NavLinkComponent /*to="/hesap-numaralarimiz"*/>Tursab Üyesi</NavLinkComponent>
               <NavLinkComponent /*to="/oteller"*/>Diyanet İşleri Başkanlığı Yetkili Acenta</NavLinkComponent>
             </div>
