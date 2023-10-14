@@ -22,11 +22,7 @@ const StyledImg = styled.img`
   transition: 1s ease-in;
   margin-left: 1em;
 
-  @media screen and (min-width: 2050px) {
-    width: 30em;
-  }
-
-  @media screen and (min-width: 1800px) and (max-width: 2049px) {
+  @media screen and (min-width: 1800px) {
     width: 25em;
   }
 
@@ -61,7 +57,8 @@ const StyledMini = styled.p`
 const StyledSectionMini = styled.p`
   font-weight: bold;
   margin-top: auto;
-  font-size: ${(props) => (props.type === 'mobilenone' ? '14px !important' : '20px !important')};
+  font-size: ${(props) =>
+    props.type === 'mobilenone' ? '14px !important' : props.type === 'bottom' ? '14px !important' : '20px !important'};
 
   @media screen and (max-width: 1200px) {
     display: ${(props) => (props.type === 'mobilenone' ? 'none' : '')};
@@ -344,8 +341,8 @@ const TourCard2 = ({ tourCard }) => {
               </StyledRow>
             </StyledCols>
 
-            <StyledCols className="col-lg-12 col-xl-3 col-xxl-3 mb-md-0 mb-4">
-              <div style={dates.entries.length <= 5 ? { margin: '50px auto' } : { margin: 'inherit' }}>
+            <StyledCols className="col-lg-12 col-xl-3 col-xxl-3  my-auto">
+              <div>
                 <StyledH6 className="mb-3 text-uppercase fw-bold">GİDİŞ TARİHLERİ</StyledH6>
                 {dates.entries.map((entry, i) => {
                   if (dateLength <= 5) {
@@ -382,7 +379,7 @@ const TourCard2 = ({ tourCard }) => {
         <div className="row">
           {extraTexts.length &&
             extraTexts.map((text, i) => (
-              <StyledSectionMini className="text-white col-xl-6 col-md-12" key={i}>
+              <StyledSectionMini type="bottom" className="text-white col-xl-6 col-md-12" key={i}>
                 {text}
               </StyledSectionMini>
             ))}
