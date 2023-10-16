@@ -188,15 +188,19 @@ const StyledProgramsCol = styled(StyledCol)`
 const DatesRow = styled.div`
   display: flex;
 
-  @media screen and (min-width: 1440px) {
-    margin-left: 0.6em;
+  @media screen and (min-width: 2500px) {
+    margin-left: 5em !important;
+  }
+
+  @media screen and (min-width: 2000px) {
+    margin-left: 3em !important;
+  }
+
+  @media screen and (min-width: 1400px) {
+    margin-left: 0.3em;
   }
 
   @media screen and (max-width: 1440px) and (min-width: 1200px) {
-    margin-left: 0.6em;
-  }
-
-  @media screen and (max-width: 1200px) {
   }
 `;
 
