@@ -1,7 +1,7 @@
 export const homeProgramCards = [
   {
     id: 1,
-    image: '/hac_640x380.webp',
+    image: '/hac_640x380.jpg',
     url: '/hac',
     title: 'HAC',
   },
@@ -13,7 +13,7 @@ export const homeProgramCards = [
   },
   {
     id: 3,
-    image: '/kudus_header.jpg',
+    image: '/kudus_1280.jpg',
     url: '/kudus-turlari',
     title: 'Kudüs Turları',
   },

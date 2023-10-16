@@ -69,16 +69,22 @@ const StyledDropdownComp = ({ to, setExpanded, children }) => {
 };
 
 const TabletNoneAndMobilDisplay = styled.span`
-  @media screen and (max-width: 1400px) and (min-width: 1000px) {
+  @media screen and (max-width: 1220px) and (min-width: 1200px) {
     display: none;
   }
 `;
+
+const LotteryButton = styled(NavItems)`
+  @media screen and (max-width: 1415px) and (min-width: 1200px) {
+    display: none;
+  }
+`
 
 function NavBar({ expanded, setExpanded }) {
   const navigate = useNavigate();
 
   return (
-    <StyledNavbar expanded={expanded} expand="lg" className="bg-body-tertiary me-5 w-100 text-center position-fixed">
+    <StyledNavbar expanded={expanded} expand="xl" className="bg-body-tertiary me-5 w-100 text-center position-fixed">
       <Container fluid>
         <Navbar.Brand style={{ cursor: 'pointer' }} onClick={() => navigate('/', { replace: true })} className="ms-5">
           <img style={{ width: '140px' }} src="/logo300x110.png" />
@@ -137,23 +143,14 @@ function NavBar({ expanded, setExpanded }) {
               </StyledNavDropdown>
             </StyledNavDropdown>
 
-            <StyledLinkComp to="/kudus-turlari" setExpanded={setExpanded}>
-              Kudüs Turları
-            </StyledLinkComp>
-
-            <StyledLinkComp to="/yurtdisi-turlari" setExpanded={setExpanded}>
-              Yurtdışı Turları
-            </StyledLinkComp>
-
-            {/* <NavDropdown title="Kültür Turları">
-              <NavDropdown.Item onClick={() => navigate('/kudus-turlari', { replace: true })}>
+            <StyledNavDropdown title="Diğer Turlar">
+              <StyledDropdownComp to="/kudus-turlari" setExpanded={setExpanded}>
                 Kudüs Turları
-              </NavDropdown.Item>
-              <NavDropdown.Divider />
-              <NavDropdown.Item onClick={() => navigate('/kultur-turlari', { replace: true })}>
-                Kültür Turları
-              </NavDropdown.Item>
-            </NavDropdown> */}
+              </StyledDropdownComp>
+              <StyledDropdownComp to="/yurtdisi-turlari" setExpanded={setExpanded}>
+                Yurtdışı Turları
+              </StyledDropdownComp>
+            </StyledNavDropdown>
           </Nav>
 
           <StyledForm className="d-flex me-5 gap-5 justify-content-center">
@@ -163,15 +160,18 @@ function NavBar({ expanded, setExpanded }) {
             <StyledLinkComp to="/hakkimizda" setExpanded={setExpanded}>
               Hakkımızda
             </StyledLinkComp>
-
             <NavItems style={{ backgroundColor: '#ce9136' }}>
               <a style={{ color: '#fff', textDecoration: 'none' }} href={`tel:+905325132858`}>
-                <TabletNoneAndMobilDisplay>Bizi Ara:</TabletNoneAndMobilDisplay> 5325132858
+                Bizi Ara: 5325132858
                 <TabletNoneAndMobilDisplay>
                   <FaPhone style={{ marginLeft: '5px', paddingBottom: '5px' }} />
                 </TabletNoneAndMobilDisplay>
               </a>
             </NavItems>
+
+            <LotteryButton style={{ backgroundColor: '#0E2954' }}>
+              <a style={{ color: '#fff', textDecoration: 'none' }}>Hac Kura Sonuçları</a>
+            </LotteryButton>
           </StyledForm>
         </Navbar.Collapse>
       </Container>

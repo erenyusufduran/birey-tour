@@ -26,15 +26,15 @@ const StyledImg = styled.img`
     width: 25em;
   }
 
-  @media screen and (min-width: 1600px) and (max-width: 1799px) {
+  @media screen and (min-width: 1600px) and (max-width: 1800px) {
     width: 22em;
   }
 
-  @media screen and (min-width: 1500px) and (max-width: 1599px) {
+  @media screen and (min-width: 1500px) and (max-width: 1600px) {
     width: 20em;
   }
 
-  @media screen and (min-width: 1401px) and (max-width: 1499px) {
+  @media screen and (min-width: 1400px) and (max-width: 1500px) {
     width: 18em;
   }
 
@@ -68,6 +68,11 @@ const StyledSectionMini = styled.p`
 const StyledH7 = styled(StyledMini)`
   font-size: 1.1rem;
   margin-bottom: 5px;
+
+  @media screen and (max-width: 1240px) and (min-width: 1200px) {
+    font-size: 1rem;
+  }
+
   @media screen and (max-width: 1200px) {
     font-size: 1.5rem;
     margin-top: 1em;
@@ -77,13 +82,19 @@ const StyledH7 = styled(StyledMini)`
 
 const StyledDates = styled.p`
   font-size: 12px;
-  text-align: center;
   font-size: 0.85em;
+
+  @media screen and (max-width: 1420px) and (min-width: 1200px) {
+    font-size: 12px !important;
+  }
 
   @media screen and (max-width: 1200px) {
     font-size: 1rem !important;
     display: 'flex';
-    justify-content: 'center';
+
+    & li {
+      list-style: none;
+    }
   }
 
   @media screen and (max-width: 600px) {
@@ -92,7 +103,16 @@ const StyledDates = styled.p`
 `;
 
 const StyledRoomsNights = styled(StyledDates)`
-  font-size: 20px;
+  font-size: 20px !important;
+  text-align: center;
+
+  @media screen and (max-width: 1440px) and (min-width: 1240px) {
+    font-size: 18px !important;
+  }
+
+  @media screen and (max-width: 1240px) and (min-width: 1200px) {
+    font-size: 15px !important;
+  }
 
   @media screen and (max-width: 1200px) {
     display: flex;
@@ -168,6 +188,25 @@ const StyledProgramsCol = styled(StyledCol)`
   }
 `;
 
+const DatesRow = styled.div`
+  display: flex;
+
+  @media screen and (min-width: 2500px) {
+    margin-left: 5em !important;
+  }
+
+  @media screen and (min-width: 2000px) {
+    margin-left: 3em !important;
+  }
+
+  @media screen and (min-width: 1400px) {
+    margin-left: 0.3em;
+  }
+
+  @media screen and (max-width: 1440px) and (min-width: 1200px) {
+  }
+`;
+
 const TourCard2 = ({ tourCard }) => {
   const {
     id,
@@ -184,7 +223,6 @@ const TourCard2 = ({ tourCard }) => {
   } = tourCard;
 
   const dateLength = dates.entries.length;
-  const datesRowCount = Math.ceil(dateLength / 2);
 
   return (
     <StyledCardCont className="text-center mt-5" style={{ backgroundColor: '#dfd9d9' }}>
@@ -210,7 +248,7 @@ const TourCard2 = ({ tourCard }) => {
             <StyledCols className="col-lg-12 col-xl-6 col-xxl-6" style={{ margin: 'auto 0' }}>
               <StyledRow className="row text-center">
                 <StyledProgramsCol className="col-xl-3 col-xxl-3">
-                  <StyledH7>Gün Sayıları</StyledH7>
+                  <StyledH7 type="gun">Gün Sayıları</StyledH7>
                   <StyledHR
                     className="d-inline-block mx-auto mt-0"
                     style={{ width: '40px', backgroundColor: '#333', height: '2px' }}
@@ -348,28 +386,27 @@ const TourCard2 = ({ tourCard }) => {
             <StyledCols className="col-lg-12 col-xl-3 col-xxl-3  my-auto">
               <div>
                 <StyledH6 className="mb-3 text-uppercase fw-bold">GİDİŞ TARİHLERİ</StyledH6>
-                {dates.entries.map((entry, i) => {
-                  if (dateLength <= 5) {
-                    return (
-                      <StyledDates style={{ fontSize: '.9em' }} key={i}>
-                        <span className="fw-bold">{entry}</span>
-                      </StyledDates>
-                    );
-                  } else {
-                    if (i === datesRowCount) null;
-                    if (i < datesRowCount)
+                <DatesRow className="row">
+                  {dates.entries.map((entry, i) => {
+                    if (dateLength <= 5) {
                       return (
                         <StyledDates style={{ fontSize: '.9em' }} key={i}>
-                          <span className="fw-bold">{entry} </span>
-                          {dates.entries[i + datesRowCount] && (
-                            <span className="fw-bold">
-                              <span style={{ fontSize: '1.1em' }}>/</span> {dates.entries[i + datesRowCount]}
-                            </span>
-                          )}
+                          <li>
+                            <span className="fw-bold">{entry}</span>
+                          </li>
                         </StyledDates>
                       );
-                  }
-                })}
+                    } else {
+                      return (
+                        <StyledDates className="col-xl-6 col-lg-12" style={{ fontSize: '.9em' }} key={i}>
+                          <li>
+                            <span className="fw-bold">{entry} </span>
+                          </li>
+                        </StyledDates>
+                      );
+                    }
+                  })}
+                </DatesRow>
               </div>
             </StyledCols>
           </div>
