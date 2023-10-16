@@ -24,12 +24,21 @@ const NavLinkComponent = ({ to, children }) => {
     </p>
   );
 };
+
+const Img = styled.img`
+  width: 300px;
+`;
+
 const Footer = ({ onClick }) => {
   return (
-    <footer onClick={onClick} className="text-center text-white text-lg-start mt-5" style={{ backgroundColor: '#0E2954' }}>
+    <footer
+      onClick={onClick}
+      className="text-center text-white text-lg-start mt-5"
+      style={{ backgroundColor: '#0E2954' }}
+    >
       {/* 2E4374, 213555, 0E2954, 213555, 27374D */}
       <section className="d-flex text-white justify-content-between p-4" style={{ backgroundColor: '#ce9136' }}>
-        <div className="me-5">
+        <div className="me-5 my-auto">
           <span>Sosyal Medya hesaplarımızdan bizi takip edin:</span>
         </div>
 
@@ -50,34 +59,34 @@ const Footer = ({ onClick }) => {
       </section>
 
       <section className="">
-        <div className="container text-center text-md-start mt-5">
+        <div className="container text-center text-lg-start mt-5">
           <div className="row mt-3">
-            <div className="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+            <div className=" col-lg-4 col-xl-3 mx-auto mb-4">
               <h6 className="text-uppercase fw-bold">Birey Tour</h6>
               <hr
                 className="mb-4 mt-0 d-inline-block mx-auto"
                 style={{ width: '60px', backgroundColor: '#333', height: '2px' }}
               />
               <p>
-                <img style={{ width: '300px' }} src="/logo300x110_beyaz.png" />
+                <Img src="/logo300x110_beyaz.png" />
               </p>
             </div>
 
-            <div className="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+            <div className="col-lg-2 col-xl-2 mx-auto mb-4">
               <h6 className="text-uppercase fw-bold">Kurumsal</h6>
               <hr
                 className="mb-4 mt-0 d-inline-block mx-auto"
                 style={{ width: '60px', backgroundColor: '#333', height: '2px' }}
               />
-              <NavLinkComponent /*to="/hakkimizda"*/>A Grubu Seyahat Acentası</NavLinkComponent>
-              <NavLinkComponent /*to="/subelerimiz"*/>
+              <NavLinkComponent>A Grubu Seyahat Acentası</NavLinkComponent>
+              <NavLinkComponent>
                 Belge No: <span style={{ fontWeight: 'bold' }}>2813</span>
               </NavLinkComponent>
-              <NavLinkComponent /*to="/hesap-numaralarimiz"*/>Tursab Üyesi</NavLinkComponent>
-              <NavLinkComponent /*to="/oteller"*/>Diyanet İşleri Başkanlığı Yetkili Acenta</NavLinkComponent>
+              <NavLinkComponent>Tursab Üyesi</NavLinkComponent>
+              <NavLinkComponent>Diyanet İşleri Başkanlığı Yetkili Acenta</NavLinkComponent>
             </div>
 
-            <div className="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+            <div className=" col-lg-2 col-xl-2 mx-auto mb-4">
               <h6 className="text-uppercase fw-bold">Hizmetlerimiz</h6>
               <hr
                 className="mb-4 mt-0 d-inline-block mx-auto"
@@ -89,7 +98,7 @@ const Footer = ({ onClick }) => {
               <NavLinkComponent to="/kudus-turlari">Kudüs Turları</NavLinkComponent>
             </div>
 
-            <div className="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+            <div className=" col-lg-4 col-xl-3 mx-auto mb-md-0 mb-4">
               <h6 className="text-uppercase fw-bold">İletişim</h6>
               <hr
                 className="mb-4 mt-0 d-inline-block mx-auto"
