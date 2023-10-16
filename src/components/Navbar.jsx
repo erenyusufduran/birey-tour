@@ -74,6 +74,12 @@ const TabletNoneAndMobilDisplay = styled.span`
   }
 `;
 
+const LotteryButton = styled(NavItems)`
+  @media screen and (max-width: 1415px) and (min-width: 1200px) {
+    display: none;
+  }
+`
+
 function NavBar({ expanded, setExpanded }) {
   const navigate = useNavigate();
 
@@ -154,16 +160,18 @@ function NavBar({ expanded, setExpanded }) {
             <StyledLinkComp to="/hakkimizda" setExpanded={setExpanded}>
               Hakkımızda
             </StyledLinkComp>
-            <span style={{ display: 'flex', gap: '1em', justifyContent: 'center' }}>
-              <NavItems style={{ backgroundColor: '#ce9136' }}>
-                <a style={{ color: '#fff', textDecoration: 'none' }} href={`tel:+905325132858`}>
-                  Bizi Ara: 5325132858
-                  <TabletNoneAndMobilDisplay>
-                    <FaPhone style={{ marginLeft: '5px', paddingBottom: '5px' }} />
-                  </TabletNoneAndMobilDisplay>
-                </a>
-              </NavItems>
-            </span>
+            <NavItems style={{ backgroundColor: '#ce9136' }}>
+              <a style={{ color: '#fff', textDecoration: 'none' }} href={`tel:+905325132858`}>
+                Bizi Ara: 5325132858
+                <TabletNoneAndMobilDisplay>
+                  <FaPhone style={{ marginLeft: '5px', paddingBottom: '5px' }} />
+                </TabletNoneAndMobilDisplay>
+              </a>
+            </NavItems>
+
+            <LotteryButton style={{ backgroundColor: '#ce9136' }}>
+              <a style={{ color: '#fff', textDecoration: 'none' }}>Hac Kura Sonuçları</a>
+            </LotteryButton>
           </StyledForm>
         </Navbar.Collapse>
       </Container>
