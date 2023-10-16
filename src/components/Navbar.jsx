@@ -169,7 +169,7 @@ function NavBar({ expanded, setExpanded }) {
               </a>
             </NavItems>
 
-            <LotteryButton style={{ backgroundColor: '#ce9136' }}>
+            <LotteryButton style={{ backgroundColor: '#0E2954' }}>
               <a style={{ color: '#fff', textDecoration: 'none' }}>Hac Kura Sonuçları</a>
             </LotteryButton>
           </StyledForm>
