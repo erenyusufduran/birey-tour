@@ -7,7 +7,7 @@ import Masthead from './Masthead';
 
 const imageData = [
   { headerText: 'Umre ve Hac Programları', pText: 'Umre Programları için bize başvurun', img: 'home_header.jpg' },
-  { headerText: 'Umre Programları', pText: 'Umre Programları', img: 'home_2_header.jpg' },
+  { headerText: 'Umre Programları', pText: 'Umre Programları', img: 'home_2_headers.jpg' },
 ];
 
 const SButton = styled.button`

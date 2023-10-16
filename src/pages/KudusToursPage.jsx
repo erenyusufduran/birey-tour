@@ -12,7 +12,7 @@ const ForeignToursPage = () => {
 
   return (
     <>
-      <Masthead headerText="Kudüs Turları" img="/kudus_header.jpg" />
+      <Masthead headerText="Kudüs Turları" img="/kudusheader2.jpg" />
       {kudusCardDatas.length ? (
         kudusCardDatas.map((cardData) => <TourCard2 key={cardData.id} tourCard={cardData} />)
       ) : (
