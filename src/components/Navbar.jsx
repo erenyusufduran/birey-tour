@@ -137,13 +137,14 @@ function NavBar({ expanded, setExpanded }) {
               </StyledNavDropdown>
             </StyledNavDropdown>
 
-            <StyledLinkComp to="/kudus-turlari" setExpanded={setExpanded}>
-              Kudüs Turları
-            </StyledLinkComp>
-
-            <StyledLinkComp to="/yurtdisi-turlari" setExpanded={setExpanded}>
-              Yurtdışı Turları
-            </StyledLinkComp>
+            <StyledNavDropdown title="Diğer Turlar">
+              <StyledDropdownComp to="/kudus-turlari" setExpanded={setExpanded}>
+                Kudüs Turları
+              </StyledDropdownComp>
+              <StyledDropdownComp to="/yurtdisi-turlari" setExpanded={setExpanded}>
+                Yurtdışı Turları
+              </StyledDropdownComp>
+            </StyledNavDropdown>
 
             {/* <NavDropdown title="Kültür Turları">
               <NavDropdown.Item onClick={() => navigate('/kudus-turlari', { replace: true })}>
