@@ -91,7 +91,10 @@ const StyledDates = styled.p`
   @media screen and (max-width: 1200px) {
     font-size: 1rem !important;
     display: 'flex';
-    justify-content: 'center';
+
+    & li {
+      list-style: none;
+    }
   }
 
   @media screen and (max-width: 600px) {
