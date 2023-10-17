@@ -230,7 +230,7 @@ export const somestrUmreCardDatas = [
     id: 1,
     extraTexts: [
       'Mekke Otel: Aziziye, Şişe Bölgesi',
-      '0-2 Yaş: $500 / 3-5 Yaş: $800 / 6-11 Yaş: $1000 (Yataksız)',
+      '0-2 Yaş: $550 / 3-5 Yaş: $950 / 6-11 Yaş: $1050 (Yataksız)',
       'Medine Otel: Merkeziye Bölgesi',
       'Sabah / Akşam Yemekleri TABLDOT',
     ],
@@ -250,7 +250,7 @@ export const somestrUmreCardDatas = [
     id: 2,
     extraTexts: [
       'Mekke Otel: Mahbesel Cin, Reabaksh Bölgesi',
-      '0-2 Yaş: $500 / 3-5 Yaş: $800 / 6-11 Yaş: $1000 (Yataksız)',
+      '0-2 Yaş: $550 / 3-5 Yaş: $950 / 6-11 Yaş: $1050 (Yataksız)',
       'Medine Otel: Merkeziye Bölgesi',
       'Sabah / Akşam Yemekleri TABLDOT',
     ],
@@ -270,7 +270,7 @@ export const somestrUmreCardDatas = [
     id: 3,
     extraTexts: [
       'Mekke Otel: Mira Sheab Otel / Murcan Kerim Otel',
-      '0-2 Yaş: $500 / 3-5 Yaş: $800 / 6-11 Yaş: $1000 (Yataksız)',
+      '0-2 Yaş: $550 / 3-5 Yaş: $950 / 6-11 Yaş: $1050 (Yataksız)',
       'Medine Otel: Merkeziye Bölgesi',
       'Sabah / Akşam Yemekleri TABLDOT',
     ],
@@ -290,7 +290,7 @@ export const somestrUmreCardDatas = [
     id: 4,
     extraTexts: [
       'Mekke Otel: Nur Süreyya / Amjad / Safwat Ajyad Otel',
-      '0-2 Yaş: $500 / 3-5 Yaş: $800 / 6-11 Yaş: $1000 (Yataksız)',
+      '0-2 Yaş: $550 / 3-5 Yaş: $950 / 6-11 Yaş: $1050 (Yataksız)',
       'Medine Otel: Merkeziye Bölgesi',
       'Sabah / Akşam Yemekleri Yarı Açık Büfe',
     ],
