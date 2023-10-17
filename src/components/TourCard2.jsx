@@ -84,6 +84,10 @@ const StyledDates = styled.p`
   font-size: 12px;
   font-size: 0.85em;
 
+  li {
+    list-style: ${(props) => (props.type === 'less' ? 'none' : '')};
+  }
+
   @media screen and (max-width: 1420px) and (min-width: 1200px) {
     font-size: 12px !important;
   }
@@ -383,14 +387,14 @@ const TourCard2 = ({ tourCard }) => {
               </StyledRow>
             </StyledCols>
 
-            <StyledCols className="col-lg-12 col-xl-3 col-xxl-3  my-auto">
+            <StyledCols className="col-lg-12 col-xl-3 col-xxl-3">
               <div>
                 <StyledH6 className="mb-3 text-uppercase fw-bold">GİDİŞ TARİHLERİ</StyledH6>
                 <DatesRow className="row">
                   {dates.entries.map((entry, i) => {
                     if (dateLength <= 5) {
                       return (
-                        <StyledDates style={{ fontSize: '.9em' }} key={i}>
+                        <StyledDates type="less" className="text-center" style={{ fontSize: '.9em' }} key={i}>
                           <li>
                             <span className="fw-bold">{entry}</span>
                           </li>
