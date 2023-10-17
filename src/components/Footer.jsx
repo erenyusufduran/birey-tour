@@ -43,16 +43,20 @@ const Footer = ({ onClick }) => {
         </div>
 
         <div className="justify-space-around">
-          <StyledHover href="" className="me-4">
+          <StyledHover
+            href="https://m.facebook.com/profile.php/?id=100063607867052&name=xhp_nt__fb__action__open_user"
+            target="blank"
+            className="me-4"
+          >
             <FaFacebookF />
           </StyledHover>
-          <StyledHover href="" className="me-4">
+          <StyledHover href="https://instagram.com/birey_tur?igshid=MzRlODBiNWFlZA==" target="blank" className="me-4">
             <FaInstagram />
           </StyledHover>
-          <StyledHover href="" className="me-4">
+          <StyledHover href="https://twitter.com/BireyTurizm" target="blank" className="me-4">
             <FaTwitter />
           </StyledHover>
-          <StyledHover href="" className="me-4">
+          <StyledHover href="mailto:bireytur@bireytur.com" target="blank" className="me-4">
             <FaGoogle />
           </StyledHover>
         </div>
