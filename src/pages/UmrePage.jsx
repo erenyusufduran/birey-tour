@@ -19,15 +19,15 @@ export const ExtraText = styled.span`
     color: #000;
 
     @media screen and (max-width: 500px) {
-      font-size: .4em !important;
+      font-size: 0.4em !important;
     }
 
     @media screen and (max-width: 500px) {
-      font-size: .4em !important;
+      font-size: 0.4em !important;
     }
 
     @media screen and (max-width: 360px) {
-      font-size: .35em !important;
+      font-size: 0.35em !important;
     }
   }
 `;
@@ -42,6 +42,8 @@ const UmrePage = ({ cardDatas, headerText }) => {
       extraText = (
         <ExtraText>
           15 Aralık 2023&apos;e kadar olan ödemelerde 100$ indirim.
+          <br />
+          <span>(Bu tarihten sonra fiyatlarımız değişiklik gösterecektir.)</span>
         </ExtraText>
       );
       break;
