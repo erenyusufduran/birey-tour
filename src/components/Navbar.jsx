@@ -134,7 +134,7 @@ function NavBar({ expanded, setExpanded }) {
               <NavDropdown.Divider />
 
               <StyledNavDropdown drop="end" title="Şevval Umre Programları">
-                <StyledDropdownComp to="/sevval-umresi/lux-umre" setExpanded={setExpanded}>
+                <StyledDropdownComp to="/sevval-umresi/umre" setExpanded={setExpanded}>
                   Ekonomik Umre
                 </StyledDropdownComp>
                 <StyledDropdownComp to="/sevval-umresi/lux-umre" setExpanded={setExpanded}>
