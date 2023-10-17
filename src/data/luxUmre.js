@@ -209,7 +209,7 @@ export const somestrLuxUmreCardDatas = [
     id: 1,
     extraTexts: [
       'Mekke Otel: Anjum / Sharaton / Marrioft Otel',
-      '0-2 Yaş: $500 / 3-5 Yaş: $800 / 6-11 Yaş: $1000 (Yataksız)',
+      '0-2 Yaş: $550 / 3-5 Yaş: $950 / 6-11 Yaş: $1050 (Yataksız)',
       'Medine Otel: Emaar Mektan / Leader Otel',
       'Sabah / Akşam Yemekleri Açık Büfe',
     ],
@@ -228,7 +228,7 @@ export const somestrLuxUmreCardDatas = [
     id: 2,
     extraTexts: [
       'Mekke Otel: Le Meridien / Ejyad Makarim / Elaf Meşair Otel',
-      '0-2 Yaş: $500 / 3-5 Yaş: $800 / 6-11 Yaş: $1000 (Yataksız)',
+      '0-2 Yaş: $550 / 3-5 Yaş: $950 / 6-11 Yaş: $1050 (Yataksız)',
       'Medine Otel: Royal İnn / Emaar Royal Otel',
       'Sabah / Akşam Yemekleri Açık Büfe',
     ],
@@ -247,7 +247,7 @@ export const somestrLuxUmreCardDatas = [
     id: 3,
     extraTexts: [
       'Mekke Otel: Orkid Safwa / Ghufran / Swiss Otel',
-      '0-2 Yaş: $500 / 3-5 Yaş: $800 / 6-11 Yaş: $1000 (Yataksız)',
+      '0-2 Yaş: $550 / 3-5 Yaş: $950 / 6-11 Yaş: $1050 (Yataksız)',
       'Medine Otel: Royal İnn / Emaar Royal Otel',
       'Sabah / Akşam Yemekleri Açık Büfe',
     ],

@@ -2,6 +2,7 @@
 import Masthead from '../components/Masthead';
 import TourCard2 from '../components/TourCard2';
 import { SNavLink } from '../components/Programs';
+import { ExtraText } from './UmrePage';
 
 import { useLocation } from 'react-router-dom';
 import { useScrollToTop } from '../hooks/useScrollToTop';
@@ -12,15 +13,17 @@ const LuxUmrePage = ({ cardDatas, headerText }) => {
 
   let extraText;
   switch (headerText) {
-    case 'Sömestr Umresi':
-      extraText = (
-        <span>
-          15 Aralık 2023&apos;e kadar olan ödemelerde <span className="fw-bold">100$</span> indirim.
-        </span>
-      );
+    case 'Sömestr Lüx Umre':
+      extraText = <ExtraText>15 Aralık 2023&apos;e kadar olan ödemelerde 100$ indirim.</ExtraText>;
       break;
     case 'Şevval Lüx Umre':
-      extraText = <span>Fiyatlar 1 Şubat 2024&apos;e kadar geçerlidir.</span>;
+      extraText = (
+        <ExtraText className="mx-1">
+          Fiyatlar 1 Şubat 2024&apos;e kadar geçerlidir.
+          <br />
+          <span>(Bu tarihten sonra fiyatlarımız değişiklik gösterecektir.)</span>
+        </ExtraText>
+      );
       break;
     default:
       extraText = false;
@@ -31,12 +34,6 @@ const LuxUmrePage = ({ cardDatas, headerText }) => {
     <>
       <Masthead headerText={headerText} headerColor="white" img="/umre_header.jpg" />
       {extraText && <h2 className="text-center mt-5">{extraText}</h2>}
-
-      {headerText === 'Sömestr Lüx Umre' && (
-        <h2 className="text-center mt-5">
-          15 Aralık 2023&apos;e kadar olan ödemelerde <span className="fw-bold">100$</span> indirim.
-        </h2>
-      )}
       {cardDatas.length ? (
         cardDatas.map((luxUmreCardData) => <TourCard2 key={luxUmreCardData.id} tourCard={luxUmreCardData} />)
       ) : (

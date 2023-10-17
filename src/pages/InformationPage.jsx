@@ -78,8 +78,8 @@ const InformationPage = () => {
               hizmeti de vermektedir. Birey Turizm, her zaman müşteri memnuniyeti ilkesinden hareketle misafirlerinin
               düşünce ve beklentilerini ön planda tutmaktadır.
             </p>
-            <TelButton href="tel:+905428301058">
-              Birey Tour: 542 830 10 58 <FaPhone fontSize="12px" />
+            <TelButton href="tel:+905325132858">
+              Birey Tour: 532 513 2858 <FaPhone fontSize="12px" />
             </TelButton>
           </FlexItems>
           <ImageContainer style={{ marginTop: '4em' }}>

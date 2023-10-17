@@ -43,16 +43,20 @@ const Footer = ({ onClick }) => {
         </div>
 
         <div className="justify-space-around">
-          <StyledHover href="" className="me-4">
+          <StyledHover
+            href="https://m.facebook.com/profile.php/?id=100063607867052&name=xhp_nt__fb__action__open_user"
+            target="blank"
+            className="me-4"
+          >
             <FaFacebookF />
           </StyledHover>
-          <StyledHover href="" className="me-4">
+          <StyledHover href="https://instagram.com/birey_tur?igshid=MzRlODBiNWFlZA==" target="blank" className="me-4">
             <FaInstagram />
           </StyledHover>
-          <StyledHover href="" className="me-4">
+          <StyledHover href="https://twitter.com/BireyTurizm" target="blank" className="me-4">
             <FaTwitter />
           </StyledHover>
-          <StyledHover href="" className="me-4">
+          <StyledHover href="mailto:bireytur@bireytur.com" target="blank" className="me-4">
             <FaGoogle />
           </StyledHover>
         </div>
@@ -108,7 +112,7 @@ const Footer = ({ onClick }) => {
                 <FaHome className="me-3" /> Söğütlüçeşme Caddesi, Beyciğim Sk. Mutlu Apt. No: 1/1, Kadıköy/İstanbul
               </p>
               <p>
-                <FaEnvelope className="me-3" /> bireytour@bireytur.com
+                <FaEnvelope className="me-3" /> bireytur@bireytur.com
               </p>
               <p>
                 <FaPhone className="me-3" /> 0532 513 2858

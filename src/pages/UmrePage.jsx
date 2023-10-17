@@ -1,10 +1,36 @@
 /* eslint-disable react/prop-types */
+import styled from 'styled-components';
+
 import Masthead from '../components/Masthead';
 import TourCard2 from '../components/TourCard2';
 import { SNavLink } from '../components/Programs';
 
 import { useLocation } from 'react-router-dom';
 import { useScrollToTop } from '../hooks/useScrollToTop';
+
+export const ExtraText = styled.span`
+  font-weight: bold;
+  color: red;
+  font-size: 1.4em !important;
+
+  & span {
+    margin-top: -20px;
+    font-size: 0.5em !important;
+    color: #000;
+
+    @media screen and (max-width: 500px) {
+      font-size: .4em !important;
+    }
+
+    @media screen and (max-width: 500px) {
+      font-size: .4em !important;
+    }
+
+    @media screen and (max-width: 360px) {
+      font-size: .35em !important;
+    }
+  }
+`;
 
 const UmrePage = ({ cardDatas, headerText }) => {
   const { pathname } = useLocation();
@@ -14,19 +40,25 @@ const UmrePage = ({ cardDatas, headerText }) => {
   switch (headerText) {
     case 'Sömestr Umresi':
       extraText = (
-        <span>
-          15 Aralık 2023&apos;e kadar olan ödemelerde <span className="fw-bold">100$</span> indirim.
-        </span>
+        <ExtraText>
+          15 Aralık 2023&apos;e kadar olan ödemelerde 100$ indirim.
+        </ExtraText>
       );
       break;
     case 'Şevval Umresi':
-      extraText = <span>Fiyatlar 1 Şubat 2024&apos;e kadar geçerlidir.</span>;
+      extraText = (
+        <ExtraText className="mx-1">
+          Fiyatlar 1 Şubat 2024&apos;e kadar geçerlidir.
+          <br />
+          <span>(Bu tarihten sonra fiyatlarımız değişiklik gösterecektir.)</span>
+        </ExtraText>
+      );
       break;
     default:
       extraText = false;
       break;
   }
-//s
+  //s
   return (
     <>
       <Masthead headerText={headerText} headerColor="white" img="/umre_header.jpg" />
