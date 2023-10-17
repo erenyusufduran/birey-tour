@@ -78,7 +78,7 @@ const LotteryButton = styled(NavItems)`
   @media screen and (max-width: 1415px) and (min-width: 1200px) {
     display: none;
   }
-`
+`;
 
 function NavBar({ expanded, setExpanded }) {
   const navigate = useNavigate();
@@ -124,11 +124,24 @@ function NavBar({ expanded, setExpanded }) {
               <NavDropdown.Divider />
 
               <StyledNavDropdown drop="end" title="Ramazan Umre Programları">
-                <StyledDropdownComp to="/ramazan-umresi/lux-umre" setExpanded={setExpanded}>
+                {/* <StyledDropdownComp to="/ramazan-umresi/lux-umre" setExpanded={setExpanded}>
                   Ekonomik Umre
                 </StyledDropdownComp>
                 <StyledDropdownComp to="/ramazan-umresi/lux-umre" setExpanded={setExpanded}>
                   Lüx Umre
+                </StyledDropdownComp> */}
+
+                <StyledDropdownComp to="/ramazan-umresi/lux-umre" setExpanded={setExpanded}>
+                  Servisli Oteller
+                </StyledDropdownComp>
+                <StyledDropdownComp to="/ramazan-umresi/lux-umre" setExpanded={setExpanded}>
+                  Yürüme Mesafeli Oteller
+                </StyledDropdownComp>
+                <StyledDropdownComp to="/ramazan-umresi/lux-umre" setExpanded={setExpanded}>
+                  Kısa Programlar
+                </StyledDropdownComp>
+                <StyledDropdownComp to="/ramazan-umresi/lux-umre" setExpanded={setExpanded}>
+                  Son 10 Gün Programları
                 </StyledDropdownComp>
               </StyledNavDropdown>
               <NavDropdown.Divider />
