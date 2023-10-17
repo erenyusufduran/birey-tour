@@ -109,16 +109,16 @@ const Footer = ({ onClick }) => {
                 style={{ width: '60px', backgroundColor: '#333', height: '2px' }}
               />
               <p>
-                <FaHome className="me-3" /> Söğütlüçeşme Caddesi, Beyciğim Sk. Mutlu Apt. No: 1/1, Kadıköy/İstanbul
+                <FaHome className="me-3" />Rasimpaşa Mahallesi. Beyciğim Sok. No: 1/6 Kadıköy / İstanbul
               </p>
               <p>
-                <FaEnvelope className="me-3" /> bireytur@bireytur.com
+                <FaEnvelope className="me-3" />bireytur@bireytur.com
               </p>
               <p>
-                <FaPhone className="me-3" /> 0532 513 2858
+                <FaPhone className="me-3" />0532 513 2858
               </p>
               <p>
-                <FaPhone className="me-3" /> 0216 348 4900
+                <FaPhone className="me-3" />0216 348 4900
               </p>
             </div>
           </div>

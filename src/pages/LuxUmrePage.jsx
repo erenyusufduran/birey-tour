@@ -14,7 +14,13 @@ const LuxUmrePage = ({ cardDatas, headerText }) => {
   let extraText;
   switch (headerText) {
     case 'Sömestr Lüx Umre':
-      extraText = <ExtraText>15 Aralık 2023&apos;e kadar olan ödemelerde 100$ indirim.</ExtraText>;
+      extraText = (
+        <ExtraText>
+          15 Aralık 2023&apos;e kadar olan ödemelerde 100$ indirim.
+          <br />
+          <span>(Bu tarihten sonra fiyatlarımız değişiklik gösterecektir.)</span>
+        </ExtraText>
+      );
       break;
     case 'Şevval Lüx Umre':
       extraText = (
