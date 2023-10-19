@@ -264,9 +264,9 @@ const TourCard2 = ({ tourCard }) => {
                           <StyledRoomsNights style={{ marginBottom: '7.4px' }} key={i}>
                             <div>
                               <MobileNone>{dayCounts[i]}:</MobileNone>
-                              <StyledMini key={i}>{text}</StyledMini>{' '}
+                              <StyledMini key={i}>{text}</StyledMini>
                             </div>
-                            <MobileNone style={{ fontSize: '.8em' }}>({nightsDays[i]})</MobileNone>
+                            {nightsDays[i] && <MobileNone style={{ fontSize: '.8em' }}>({nightsDays[i]})</MobileNone>}
                           </StyledRoomsNights>
                         );
                       else
@@ -278,7 +278,7 @@ const TourCard2 = ({ tourCard }) => {
                                 <MobileNone>{dayCounts[i]}: </MobileNone>
                                 <StyledMini key={i}>{text}</StyledMini>
                               </div>
-                              <MobileNone style={{ fontSize: '.8em' }}>({nightsDays[i]})</MobileNone>
+                              {nightsDays[i] && <MobileNone style={{ fontSize: '.8em' }}>({nightsDays[i]})</MobileNone>}
                             </StyledRoomsNights>
                           </span>
                         );
@@ -299,7 +299,7 @@ const TourCard2 = ({ tourCard }) => {
                             <MobileNone>{dayCounts[i]}:</MobileNone>
                             <span className="fw-bold"> {price === '-' ? '----' : `$${price}`}</span>
                           </div>
-                          <MobileNone style={{ fontSize: '.8em' }}>({nightsDays[i]})</MobileNone>
+                          {nightsDays[i] && <MobileNone style={{ fontSize: '.8em' }}>({nightsDays[i]})</MobileNone>}
                         </StyledRoomsNights>
                       );
                     else
@@ -311,7 +311,7 @@ const TourCard2 = ({ tourCard }) => {
                               <MobileNone>{dayCounts[i]}: </MobileNone>
                               <span className="fw-bold">{price === '-' ? '----' : `$${price}`}</span>
                             </div>
-                            <MobileNone style={{ fontSize: '.8em' }}>({nightsDays[i]})</MobileNone>
+                            {nightsDays[i] && <MobileNone style={{ fontSize: '.8em' }}>({nightsDays[i]})</MobileNone>}
                           </StyledRoomsNights>
                         </span>
                       );
@@ -332,7 +332,7 @@ const TourCard2 = ({ tourCard }) => {
                             <MobileNone>{dayCounts[i]}:</MobileNone>
                             <span className="fw-bold"> {price === '-' ? '----' : `$${price}`}</span>
                           </div>
-                          <MobileNone style={{ fontSize: '.8em' }}>({nightsDays[i]})</MobileNone>
+                          {nightsDays[i] && <MobileNone style={{ fontSize: '.8em' }}>({nightsDays[i]})</MobileNone>}
                         </StyledRoomsNights>
                       );
                     else
@@ -344,7 +344,7 @@ const TourCard2 = ({ tourCard }) => {
                               <MobileNone>{dayCounts[i]}: </MobileNone>
                               <span className="fw-bold">{price === '-' ? '----' : `$${price}`}</span>
                             </div>
-                            <MobileNone style={{ fontSize: '.8em' }}>({nightsDays[i]})</MobileNone>
+                            {nightsDays[i] && <MobileNone style={{ fontSize: '.8em' }}>({nightsDays[i]})</MobileNone>}
                           </StyledRoomsNights>
                         </span>
                       );
@@ -365,7 +365,7 @@ const TourCard2 = ({ tourCard }) => {
                               <MobileNone>{dayCounts[i]}:</MobileNone>
                               <span className="fw-bold"> {price === '-' ? '----' : `$${price}`}</span>
                             </div>
-                            <MobileNone style={{ fontSize: '.8em' }}>({nightsDays[i]})</MobileNone>
+                            {nightsDays[i] && <MobileNone style={{ fontSize: '.8em' }}>({nightsDays[i]})</MobileNone>}
                           </StyledRoomsNights>
                         );
                       else
@@ -377,7 +377,7 @@ const TourCard2 = ({ tourCard }) => {
                                 <MobileNone>{dayCounts[i]}: </MobileNone>
                                 <span className="fw-bold">{price === '-' ? '----' : `$${price}`}</span>
                               </div>
-                              <MobileNone style={{ fontSize: '.8em' }}>({nightsDays[i]})</MobileNone>
+                              {nightsDays[i] && <MobileNone style={{ fontSize: '.8em' }}>({nightsDays[i]})</MobileNone>}
                             </StyledRoomsNights>
                           </>
                         );
