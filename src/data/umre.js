@@ -184,47 +184,6 @@ export const sevvalUmreCardDatas = [
   },
 ];
 
-export const ramazanUmreCardDatas = [
-  {
-    id: 1,
-    extraTexts: [
-      'Mekke Otel: Aziziye, Şişe, Bela Kureyşi Bölgesi',
-      'Sabah / Akşam Yemekleri, Ramazanda İftar ve Sahur TABLDOT',
-      'Medine Otel: Merkeziye Bölgesi / Ekonomik Oteller',
-    ],
-    dayCounts: ['38 - 40 Gün'],
-    nightsDays: ['33 - 35 Gün Mekke / 5 Gün Medine'],
-    medineDays: '3',
-    twoPeopleRoomPrices: ['1800'],
-    threePeopleRoomPrices: ['1700'],
-    fourPeopleRoomPrices: ['1600'],
-    dates: {
-      entries: ['5 - 10 MART 2024'],
-    },
-    hotelType: '30 Kasım 2023 Ödemeli / Servisli Oteller',
-    img: '/kaaba.jpg',
-  },
-  {
-    id: 2,
-    extraTexts: [
-      'Mekke Otel: Aziziye, Şişe, Bela Kureyşi Bölgesi',
-      'Sabah / Akşam Yemekleri, Ramazanda İftar ve Sahur TABLDOT',
-      'Medine Otel: Merkeziye Bölgesi / Ekonomik Oteller',
-    ],
-    dayCounts: ['38 - 40 Gün'],
-    nightsDays: ['33 - 35 Gün Mekke / 5 Gün Medine'],
-    medineDays: '3',
-    twoPeopleRoomPrices: ['2000'],
-    threePeopleRoomPrices: ['1900'],
-    fourPeopleRoomPrices: ['1800'],
-    dates: {
-      entries: ['5 - 10 MART 2024'],
-    },
-    hotelType: '15 Ocak 2024 Ödemeli / Servisli Oteller',
-    img: '/kaaba.jpg',
-  },
-];
-
 export const somestrUmreCardDatas = [
   {
     id: 1,
