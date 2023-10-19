@@ -15,14 +15,9 @@ const InformationPage = lazy(() => import('./pages/InformationPage'));
 const CommunicationPage = lazy(() => import('./pages/CommunicationPage'));
 const SubePage = lazy(() => import('./pages/SubePage'));
 
-import { umreCardDatas, sevvalUmreCardDatas, ramazanUmreCardDatas, somestrUmreCardDatas } from './data/umre';
-import {
-  luxUmreCardDatas,
-  sevvalLuxUmreCardDatas,
-  ramazanLuxUmreCardDatas,
-  somestrLuxUmreCardDatas,
-} from './data/luxUmre';
-
+import { umreCardDatas, sevvalUmreCardDatas, somestrUmreCardDatas } from './data/umre';
+import { luxUmreCardDatas, sevvalLuxUmreCardDatas, somestrLuxUmreCardDatas } from './data/luxUmre';
+import { kisaProgram, son10GunProgram, servisli, yurumeMesafeli } from './data/ramadan';
 function App() {
   return (
     <BrowserRouter>
@@ -47,11 +42,29 @@ function App() {
               <Route path="umre" element={<UmrePage cardDatas={sevvalUmreCardDatas} headerText="Şevval Umresi" />} />
             </Route>
             <Route path="ramazan-umresi" element={<Outlet />}>
-              <Route
+              {/* <Route
                 path="lux-umre"
                 element={<LuxUmrePage cardDatas={ramazanLuxUmreCardDatas} headerText="Ramazan Lüx Umre" />}
               />
-              <Route path="umre" element={<UmrePage cardDatas={ramazanUmreCardDatas} headerText="Ramazan Umresi" />} />
+              <Route path="umre" element={<UmrePage cardDatas={ramazanUmreCardDatas} headerText="Ramazan Umresi" />} /> */}
+
+              <Route
+                index
+                path="servisli-oteller"
+                element={<UmrePage cardDatas={servisli} headerText="Ramazan Umresi" />}
+              />
+              <Route
+                path="yurume-mesafeli-oteller"
+                element={<UmrePage cardDatas={yurumeMesafeli} headerText="Ramazan Umresi" />}
+              />
+              <Route
+                path="kisa-programlar"
+                element={<UmrePage cardDatas={kisaProgram} headerText="Kısa Ramazan Umresi" />}
+              />
+              <Route
+                path="son-on-gun-programlari"
+                element={<UmrePage cardDatas={son10GunProgram} headerText="Son 10 Gün Ramazan Umresi" />}
+              />
             </Route>
             <Route path="somestr-umresi" element={<Outlet />}>
               <Route
