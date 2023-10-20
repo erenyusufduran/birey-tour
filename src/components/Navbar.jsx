@@ -131,16 +131,16 @@ function NavBar({ expanded, setExpanded }) {
                   Lüx Umre
                 </StyledDropdownComp> */}
 
-                <StyledDropdownComp to="/ramazan-umresi/lux-umre" setExpanded={setExpanded}>
+                <StyledDropdownComp to="/ramazan-umresi/servisli-oteller" setExpanded={setExpanded}>
                   Servisli Oteller
                 </StyledDropdownComp>
-                <StyledDropdownComp to="/ramazan-umresi/lux-umre" setExpanded={setExpanded}>
+                <StyledDropdownComp to="/ramazan-umresi/yurume-mesafeli-oteller" setExpanded={setExpanded}>
                   Yürüme Mesafeli Oteller
                 </StyledDropdownComp>
-                <StyledDropdownComp to="/ramazan-umresi/lux-umre" setExpanded={setExpanded}>
+                <StyledDropdownComp to="/ramazan-umresi/kisa-programlar" setExpanded={setExpanded}>
                   Kısa Programlar
                 </StyledDropdownComp>
-                <StyledDropdownComp to="/ramazan-umresi/lux-umre" setExpanded={setExpanded}>
+                <StyledDropdownComp to="/ramazan-umresi/son-on-gun-programlari" setExpanded={setExpanded}>
                   Son 10 Gün Programları
                 </StyledDropdownComp>
               </StyledNavDropdown>
