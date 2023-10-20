@@ -8,33 +8,33 @@ const StyledMasthead = styled.header`
   background-position: center;
   background-repeat: no-repeat;
   background-image: ${(props) =>
-    props.type && `linear-gradient(to bottom, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)),url(${props.type})`};
+    props.type && `linear-gradient(to bottom, rgba(255, 255, 255, 0.35), rgba(255, 255, 255, 0.35)),url(${props.type})`};
   background-color: ${(props) => props.bgcolor && props.bgcolor};
 `;
 
 const Header = styled.h1`
   font-weight: bold;
-  font-size: ${(props) => (props.type ? '3em' : '7em')};
-  margin-bottom: ${(props) => (props.type ? '3em' : '0')};
+  font-size: ${(props) => (props.type ? '2.5em' : '7em')};
+  margin-bottom: ${(props) => (props.type ? '2.5em' : '0')};
 
   @media screen and (max-width: 1200px) {
-    font-size: ${(props) => (props.type ? '3em' : '6em')};
+    font-size: ${(props) => (props.type ? '2.5em' : '6em')};
   }
 
   @media screen and (max-width: 650px) {
-    font-size: ${(props) => (props.type ? '3em' : '5em')};
+    font-size: ${(props) => (props.type ? '2.5em' : '5em')};
   }
 
   @media screen and (max-width: 450px) {
-    font-size: ${(props) => (props.type ? '3em' : '4em')};
+    font-size: ${(props) => (props.type ? '2.5em' : '4em')};
   }
 
   @media screen and (max-width: 350px) {
-    font-size: ${(props) => (props.type ? '3em' : '3em')};
+    font-size: ${(props) => (props.type ? '2.5em' : '2.5em')};
   }
 
   @media screen and (max-width: 300px) {
-    font-size: ${(props) => (props.type ? '3em' : '1.5em')};
+    font-size: ${(props) => (props.type ? '2.5em' : '1.5em')};
   }
 `;
 
@@ -42,7 +42,7 @@ const CarouselPText = styled.p`
   border: 1px solid white;
   background-color: rgba(255, 255, 255, 0.8);
   padding: 8px 12px;
-  font-size: 2em;
+  font-size: 1.5em;
 `;
 
 const CarouselTexts = ({ headerText, headerColor, pText }) => {
