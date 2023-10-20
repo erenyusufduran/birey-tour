@@ -56,6 +56,15 @@ const UmrePage = ({ cardDatas, headerText }) => {
         </ExtraText>
       );
       break;
+    case 'Ramazan Umresi':
+      extraText = (
+        <ExtraText className="mx-1">
+          Fiyatlar üstlerindeki ödeme tarihlerine kadar geçerlidir.
+          <br />
+          <span>(Ödeme tarihlerinden sonra fiyatlarımız değişiklik gösterecektir.)</span>
+        </ExtraText>
+      );
+      break;
     default:
       extraText = false;
       break;
