@@ -217,7 +217,8 @@ const TourCard2 = ({ tourCard }) => {
     extraTexts,
     dayCounts,
     nightsDays,
-    medineDays,
+    extraHead,
+    secondExtraHead,
     twoPeopleRoomPrices,
     threePeopleRoomPrices,
     fourPeopleRoomPrices,
@@ -237,9 +238,14 @@ const TourCard2 = ({ tourCard }) => {
         <StyledSectionMini style={{ fontSize: '20px' }} className="text-white text-uppercase">
           {hotelType}
         </StyledSectionMini>
-        {medineDays && (
+        {extraHead && (
+          <StyledSectionMini className="text-white text-uppercase">
+            {extraHead}
+          </StyledSectionMini>
+        )}
+        {secondExtraHead && (
           <StyledSectionMini type="mobilenone" style={{ fontSize: '20px' }} className="text-white text-uppercase">
-            {medineDays} Gece Medine
+            {secondExtraHead}
           </StyledSectionMini>
         )}
       </StyledSection>
