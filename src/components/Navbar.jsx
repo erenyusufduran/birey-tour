@@ -74,11 +74,11 @@ const TabletNoneAndMobilDisplay = styled.span`
   }
 `;
 
-const LotteryButton = styled(NavItems)`
-  @media screen and (max-width: 1415px) and (min-width: 1200px) {
-    display: none;
-  }
-`;
+// const LotteryButton = styled(NavItems)`
+//   @media screen and (max-width: 1415px) and (min-width: 1200px) {
+//     display: none;
+//   }
+// `;
 
 function NavBar({ expanded, setExpanded }) {
   const navigate = useNavigate();
@@ -182,9 +182,9 @@ function NavBar({ expanded, setExpanded }) {
               </a>
             </NavItems>
 
-            <LotteryButton style={{ backgroundColor: '#0E2954' }}>
+            {/* <LotteryButton style={{ backgroundColor: '#0E2954' }}>
               <a style={{ color: '#fff', textDecoration: 'none' }}>Hac Kura Sonuçları</a>
-            </LotteryButton>
+            </LotteryButton> */}
           </StyledForm>
         </Navbar.Collapse>
       </Container>
