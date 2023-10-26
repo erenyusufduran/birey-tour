@@ -33,7 +33,7 @@ const ImageContainer = styled(FlexItems)`
   }
 `;
 
-const TelButton = styled.a`
+export const TelButton = styled.a`
   text-decoration: none;
   color: #fff;
   background-color: #0E2954;
@@ -42,6 +42,7 @@ const TelButton = styled.a`
   margin: 0 auto;
   padding: 10px 16px;
   border-radius: 5%;
+  cursor: pointer;
 `;
 
 const InformationPage = () => {

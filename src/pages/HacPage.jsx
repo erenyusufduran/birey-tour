@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
 import Masthead from '../components/Masthead';
-import TourCard2 from '../components/TourCard2';
+import TourCard from '../components/TourCard';
 import { SNavLink } from '../components/Programs';
 import { hacCardDatas } from '../data/hac';
 import { useLocation } from 'react-router-dom';
@@ -16,7 +16,7 @@ const HacPage = () => {
     <>
       <Masthead headerText="HAC" headerColor="#fff" img="/hac_header.jpg" />
       {hacCardDatas.length ? (
-        hacCardDatas.map((cardData) => <TourCard2 key={cardData.id} tourCard={cardData} />)
+        hacCardDatas.map((cardData) => <TourCard key={cardData.id} tourCard={cardData} />)
       ) : (
         <div className="conteiner text-center mt-5">
           {extraText && <h2 className="text-center mt-5">{extraText}</h2>}

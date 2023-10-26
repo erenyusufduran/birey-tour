@@ -1,5 +1,5 @@
 import Masthead from '../components/Masthead';
-import TourCard2 from '../components/TourCard2';
+import TourCard from '../components/TourCard';
 import { SNavLink } from '../components/Programs';
 import { useLocation } from 'react-router-dom';
 import { useScrollToTop } from '../hooks/useScrollToTop';
@@ -12,7 +12,7 @@ const ForeignToursPage = () => {
     <>
       <Masthead headerText="Yurtdışı Turları" img="/yurtdisi_header.jpg" />
       {[].length ? (
-        [].map((cardData) => <TourCard2 key={cardData.id} tourCard={cardData} />)
+        [].map((cardData) => <TourCard key={cardData.id} tourCard={cardData} />)
       ) : (
         <div className="conteiner text-center mt-5 ">
           <h2>Şu anda herhangi bir tur bulunmamakta</h2>
