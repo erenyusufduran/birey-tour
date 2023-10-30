@@ -3,10 +3,19 @@ import TourCard from '../components/TourCard';
 import { SNavLink } from '../components/Programs';
 import { useLocation } from 'react-router-dom';
 import { useScrollToTop } from '../hooks/useScrollToTop';
+// import { useEffect } from 'react';
 
 const ForeignToursPage = () => {
   const { pathname } = useLocation();
   useScrollToTop(pathname, "Yurtdışı Turları");
+
+  // useEffect(() => {
+  //   const fetchData = async () => {
+  //     const data = await fetch("https://www.hunkarturizm.com/turbulteni")
+  //     console.log(data);
+  //   }
+  //   fetchData();
+  // }, [])
 
   return (
     <>
