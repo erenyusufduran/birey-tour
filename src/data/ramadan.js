@@ -238,7 +238,7 @@ export const son10GunProgram = [
     id: 3,
     extraTexts: [
       'Mekke Otel: Angum Otel',
-      'Medine Otel: Sanabol / Ceodar Otel',
+      'Medine Otel: Sanabel / Ceodar Otel',
       '0-2 Yaş: $500 / 3-5 Yaş: $800 / 6-11 Yaş: $1000 (Yataksız)',
       'Sabah / Akşam Yemekleri Açık Büfe',
     ],
@@ -248,6 +248,26 @@ export const son10GunProgram = [
     twoPeopleRoomPrices: ['3000', '3350'],
     threePeopleRoomPrices: ['2900', '3250'],
     fourPeopleRoomPrices: ['2800', '3150'],
+    dates: {
+      entries: ['30 - 31 MART 2024'],
+    },
+    hotelType: '5 Yıldızlı Oteller',
+    img: '/kaaba.jpg',
+  },
+  {
+    id: 3,
+    extraTexts: [
+      'Mekke Otel: Swiss / Orkid Safwa Otel',
+      'Medine Otel: Leader / Sanabel / Emaar Maktan Otel',
+      '0-2 Yaş: $500 / 3-5 Yaş: $800 / 6-11 Yaş: $1000 (Yataksız)',
+      'Sabah / Akşam Yemekleri Açık Büfe',
+    ],
+    dayCounts: ['15 Gün', '20 Gün'],
+    nightsDays: ['Son 10 Gün Medine, Bayramın 2. Günü Mekke', 'Son 10 Gün Medine, Bayramın 2. Günü Mekke'],
+    secondExtraHead: 'Son 10 Gün Medine, Bayramın 2. Günü Mekke',
+    twoPeopleRoomPrices: ['3300', '3900'],
+    threePeopleRoomPrices: ['3200', '3800'],
+    fourPeopleRoomPrices: ['3100', '3700'],
     dates: {
       entries: ['30 - 31 MART 2024'],
     },

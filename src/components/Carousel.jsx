@@ -6,8 +6,20 @@ import { FaArrowLeft, FaArrowRight } from 'react-icons/fa';
 import Masthead from './Masthead';
 
 const imageData = [
-  { headerText: 'Umre ve Hac Programları', pText: 'Umre Programları için bize başvurun', img: 'home_header.jpg' },
-  { headerText: 'Umre Programları', pText: 'Umre Programları', img: 'home_2_headers.jpg' },
+  {
+    headerText: 'Ramazan Umre Programlarımız Açıklanmıştır',
+    headerColor: '#000',
+    pText: 'RAMAZAN AYI UMRE KAMPANYALARIMIZA KATILMAK İÇİN ACELE EDİN.',
+    img: 'home_header.jpg',
+    to: '/ramazan-umresi/servisli-oteller',
+  },
+  {
+    headerText: 'Şevval Umre Programlarımız Açıklanmıştır',
+    headerColor: '#000',
+    pText: 'ŞEVVAL AYI UMRE KAMPANYALARIMIZA KATILMAK İÇİN ACELE EDİN.',
+    img: 'home_2_headers.jpg',
+    to: '/sevval-umresi/umre',
+  },
 ];
 
 const SButton = styled.button`
@@ -17,6 +29,7 @@ const SButton = styled.button`
   background-color: transparent;
   color: #fff;
   font-size: 2em;
+  cursor: pointer;
 `;
 
 const Carousel = () => {
@@ -41,17 +54,13 @@ const Carousel = () => {
   };
 
   return (
-    <div
-      className="carousel slide"
-      onMouseEnter={() => setMouseEntered(true)}
-      onMouseLeave={() => setMouseEntered(false)}
-    >
+    <div className="carousel slide" onMouseEnter={() => setMouseEntered(true)} onMouseLeave={() => setMouseEntered(false)}>
       <div className="carousel-inner">
         {imageData.length &&
           imageData.map((data, i) => (
             <div key={i} className={`carousel-item ${change % imageData.length === i ? 'active' : ''}`}>
               <div>
-                <Masthead headerText={data.headerText} pText={data.pText} img={data.img} />
+                <Masthead headerText={data.headerText} pText={data.pText} img={data.img} to={data.to} />
               </div>
               <SButton onClick={changeToLeft} style={{ left: 0 }}>
                 <FaArrowLeft />

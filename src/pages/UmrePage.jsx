@@ -2,7 +2,7 @@
 import styled from 'styled-components';
 
 import Masthead from '../components/Masthead';
-import TourCard2 from '../components/TourCard2';
+import TourCard from '../components/TourCard';
 import { SNavLink } from '../components/Programs';
 
 import { useLocation } from 'react-router-dom';
@@ -38,7 +38,7 @@ const UmrePage = ({ cardDatas, headerText }) => {
 
   let extraText;
   switch (headerText) {
-    case 'Sömestr Umresi':
+    case 'Sömestr Umresi' || 'Sömestr Lüx Umre':
       extraText = (
         <ExtraText>
           15 Aralık 2023&apos;e kadar olan ödemelerde 100$ indirim.
@@ -47,7 +47,7 @@ const UmrePage = ({ cardDatas, headerText }) => {
         </ExtraText>
       );
       break;
-    case 'Şevval Umresi':
+    case 'Şevval Umresi' || 'Şevval Lüx Umre':
       extraText = (
         <ExtraText className="mx-1">
           Fiyatlar 1 Şubat 2024&apos;e kadar geçerlidir.
@@ -75,7 +75,7 @@ const UmrePage = ({ cardDatas, headerText }) => {
       <Masthead headerText={headerText} headerColor="white" img="/umre_header.jpg" />
       {extraText && <h2 className="text-center mt-5">{extraText}</h2>}
       {cardDatas.length ? (
-        cardDatas.map((umreCardData) => <TourCard2 key={umreCardData.id} tourCard={umreCardData} />)
+        cardDatas.map((umreCardData) => <TourCard key={umreCardData.id} tourCard={umreCardData} />)
       ) : (
         <div className="conteiner text-center mt-5">
           <h2>Şu anda herhangi bir tur bulunmamakta</h2>
