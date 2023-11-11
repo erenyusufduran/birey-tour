@@ -188,7 +188,7 @@ export const somestrUmreCardDatas = [
   {
     id: 2,
     extraTexts: [
-      'Mekke Otel: Mahbesel Cin, Reabaksh Bölgesi',
+      'Mekke Otel: Mira Sheab / Murcan Kerim Otel ',
       '0-2 Yaş: $550 / 3-5 Yaş: $950 / 6-11 Yaş: $1050 (Yataksız)',
       'Medine Otel: Merkeziye Bölgesi',
       'Sabah, Öğle KUMANYA / Akşam Yemekleri TABLDOT',
@@ -208,7 +208,7 @@ export const somestrUmreCardDatas = [
   {
     id: 3,
     extraTexts: [
-      'Mekke Otel: Mira Sheab / Murcan Kerim / Amjad AjyadOtel',
+      'Mekke Otel: Süreyya / Sunrise Otel',
       'Medine Otel: Merkeziye Bölgesi',
       '0-2 Yaş: $550 / 3-5 Yaş: $950 / 6-11 Yaş: $1050 (Yataksız)',
       'Sabah, Öğle KUMANYA / Akşam Yemekleri TABLDOT',
