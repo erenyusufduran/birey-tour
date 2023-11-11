@@ -54,7 +54,28 @@ export const yurumeMesafeli = [
     ],
     dayCounts: ['33 - 34 Gün'],
     nightsDays: ['20 - 22 Gün Mekke / 10 - 12 Gün Medine'],
-    extraHead: '30 Ekim 2023 Ödemeli',
+    extraHead: '30 Kasım 2023 Ödemeli',
+    secondExtraHead: '10 - 12 Gün Medine',
+    twoPeopleRoomPrices: ['2200'],
+    threePeopleRoomPrices: ['2100'],
+    fourPeopleRoomPrices: ['2000'],
+    dates: {
+      entries: ['5 - 10 MART 2024'],
+    },
+    hotelType: 'Yürüme Mesafeli Oteller',
+    img: '/kaaba.jpg',
+  },
+  {
+    id: 2,
+    extraTexts: [
+      'Mekke Otel: Mira Shaab, Murcan Kerim',
+      'Medine Otel: Merkeziye Bölgesi',
+      '0-2 Yaş: $500 / 3-5 Yaş: $800 / 6-11 Yaş: $1000 (Yataksız)',
+      'Ramazan Öncesi Sabah / Akşam Yemekleri, Ramazanda İftar ve Sahur TABLDOT',
+    ],
+    dayCounts: ['33 - 34 Gün'],
+    nightsDays: ['20 - 22 Gün Mekke / 10 - 12 Gün Medine'],
+    extraHead: '31 Aralık 2023 Ödemeli',
     secondExtraHead: '10 - 12 Gün Medine',
     twoPeopleRoomPrices: ['2400'],
     threePeopleRoomPrices: ['2300'],
@@ -66,7 +87,7 @@ export const yurumeMesafeli = [
     img: '/kaaba.jpg',
   },
   {
-    id: 2,
+    id: 3,
     extraTexts: [
       'Mekke Otel: Mira Shaab, Murcan Kerim',
       'Medine Otel: Merkeziye Bölgesi',
@@ -87,7 +108,7 @@ export const yurumeMesafeli = [
     img: '/kaaba.jpg',
   },
   {
-    id: 3,
+    id: 4,
     extraTexts: [
       'Mekke Otel: Sun Rise, Süreyya Otel',
       'Medine Otel: Merkeziye Bölgesi',
@@ -96,7 +117,28 @@ export const yurumeMesafeli = [
     ],
     dayCounts: ['33 - 34 Gün'],
     nightsDays: ['20 - 22 Gün Mekke / 10 - 12 Gün Medine'],
-    extraHead: '30 Ekim 2024 Ödemeli',
+    extraHead: '30 Kasım 2023 Ödemeli',
+    secondExtraHead: '10 - 12 Gün Medine',
+    twoPeopleRoomPrices: ['2700'],
+    threePeopleRoomPrices: ['2500'],
+    fourPeopleRoomPrices: ['2400'],
+    dates: {
+      entries: ['5 - 10 MART 2024'],
+    },
+    hotelType: 'Yakın Mesafeli Oteller',
+    img: '/kaaba.jpg',
+  },
+  {
+    id: 5,
+    extraTexts: [
+      'Mekke Otel: Sun Rise, Süreyya Otel',
+      'Medine Otel: Merkeziye Bölgesi',
+      '0-2 Yaş: $500 / 3-5 Yaş: $800 / 6-11 Yaş: $1000 (Yataksız)',
+      'Ramazan Öncesi Sabah / Akşam Yemekleri, Ramazanda İftar ve Sahur TABLDOT',
+    ],
+    dayCounts: ['33 - 34 Gün'],
+    nightsDays: ['20 - 22 Gün Mekke / 10 - 12 Gün Medine'],
+    extraHead: '31 Aralık 2023 Ödemeli',
     secondExtraHead: '10 - 12 Gün Medine',
     twoPeopleRoomPrices: ['2900'],
     threePeopleRoomPrices: ['2700'],
@@ -108,7 +150,7 @@ export const yurumeMesafeli = [
     img: '/kaaba.jpg',
   },
   {
-    id: 4,
+    id: 6,
     extraTexts: [
       'Mekke Otel: Sun Rise, Süreyya Otel',
       'Medine Otel: Merkeziye Bölgesi',
@@ -128,6 +170,7 @@ export const yurumeMesafeli = [
     hotelType: 'Yakın Mesafeli Oteller',
     img: '/kaaba.jpg',
   },
+ 
 ];
 
 export const kisaProgram = [
