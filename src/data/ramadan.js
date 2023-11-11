@@ -298,7 +298,7 @@ export const son10GunProgram = [
     img: '/kaaba.jpg',
   },
   {
-    id: 3,
+    id: 4,
     extraTexts: [
       'Mekke Otel: Swiss / Orkid Safwa Otel',
       'Medine Otel: Leader / Sanabel / Emaar Maktan Otel',
