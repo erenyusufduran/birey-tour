@@ -15,7 +15,7 @@ export async function getForeignTours() {
           currency: periotItem.currency || tour.currency,
           image: tour.image,
           includedPrice: tour.includedPrice,
-          name: tour.name,
+          name: periotItem.name || tour.name,
           periotName: periotItem.name,
           price: periotItem.price || tour.price,
           tourImages: tour.tourImages,
