@@ -11,7 +11,7 @@ const ForeignToursPage = () => {
   return (
     <>
       <Masthead headerText="Yurtdışı Turları" img="/yurtdisi_header.jpg" />
-      <div style={{ width: '90%', margin: '40px auto', textAlign: 'center' }}>
+      <div style={{ margin: '40px auto'}}>
         <ForeignToursTable />
       </div>
     </>

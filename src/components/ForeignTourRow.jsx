@@ -1,6 +1,7 @@
 /* eslint-disable react/prop-types */
 
 import { NavLink } from 'react-router-dom';
+import styled from 'styled-components';
 // import styled from 'styled-components';
 
 // const StyledButton = styled.button`
@@ -10,6 +11,17 @@ import { NavLink } from 'react-router-dom';
 //   color: #fff;
 //   border-radius: 12px;
 // `;
+
+const MobileNoneTD = styled.td`
+  @media screen and (max-width: 840px) {
+    display: none;
+  }
+`;
+
+function extractTextBeforeParenthesis(input) {
+  const result = input.replace(/^(.*?)\s*\([^)]*\)/, '$1');
+  return result.trim();
+}
 
 const ForeignTourRow = ({ foreignTour }) => {
   let currency = '';
@@ -31,11 +43,11 @@ const ForeignTourRow = ({ foreignTour }) => {
     <tr>
       <td>
         <NavLink to={foreignTour.periotId} style={{ textDecoration: 'none' }}>
-          {foreignTour.periotName}
+          {extractTextBeforeParenthesis(foreignTour.periotName)}
         </NavLink>
       </td>
       <td>{foreignTour.departure.toLocaleDateString('tr')}</td>
-      <td>{foreignTour.return.toLocaleDateString('tr')}</td>
+      <MobileNoneTD>{foreignTour.return.toLocaleDateString('tr')}</MobileNoneTD>
       <td>
         {Number(foreignTour.price)} {currency}
       </td>
