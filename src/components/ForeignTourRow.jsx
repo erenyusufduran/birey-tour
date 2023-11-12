@@ -1,15 +1,15 @@
 /* eslint-disable react/prop-types */
 
 import { NavLink } from 'react-router-dom';
-import styled from 'styled-components';
+// import styled from 'styled-components';
 
-const StyledButton = styled.button`
-  padding: 0 12px;
-  border: none;
-  background-color: #ce9136;
-  color: #fff;
-  border-radius: 12px;
-`;
+// const StyledButton = styled.button`
+//   padding: 0 12px;
+//   border: none;
+//   background-color: #ce9136;
+//   color: #fff;
+//   border-radius: 12px;
+// `;
 
 const ForeignTourRow = ({ foreignTour }) => {
   let currency = '';
@@ -30,7 +30,9 @@ const ForeignTourRow = ({ foreignTour }) => {
   return (
     <tr>
       <td>
-        <NavLink to={foreignTour.periotId} style={{ textDecoration: "none" }}>{foreignTour.periotName}</NavLink>
+        <NavLink to={foreignTour.periotId} style={{ textDecoration: 'none' }}>
+          {foreignTour.periotName}
+        </NavLink>
       </td>
       <td>{foreignTour.departure.toLocaleDateString('tr')}</td>
       <td>{foreignTour.return.toLocaleDateString('tr')}</td>

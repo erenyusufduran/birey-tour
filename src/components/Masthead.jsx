@@ -57,7 +57,7 @@ const CarouselTexts = ({ headerText, headerColor, pText, to }) => {
         {headerText}
       </Header>
       {pText && (
-        <NavLink style={{ textDecoration: 'none' }} to={to}>
+        <NavLink target='blank' style={{ textDecoration: 'none' }} to={to}>
           <CarouselPText className="lead">{pText}</CarouselPText>
         </NavLink>
       )}

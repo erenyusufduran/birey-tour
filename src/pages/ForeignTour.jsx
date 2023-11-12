@@ -17,7 +17,12 @@ const ForeignTour = () => {
 
   const imageData = [];
   foreignTour.tourImages.forEach((tourImage) => {
-    imageData.push({ headerText: foreignTour.name, img: tourImage, pText: 'Hemen Rezerve Et' });
+    imageData.push({
+      headerText: foreignTour.name,
+      img: tourImage || '/yurtdisi_header.jpg',
+      pText: 'Hemen Rezerve Et',
+      to: `https://wa.me/+905339302927/?text=${foreignTour.departure.toLocaleDateString("tr")} tarihli - ${foreignTour.name} ile ilgili bilgi almak istiyorum.`,
+    });
   });
 
   const parser = new Parser();
@@ -28,12 +33,14 @@ const ForeignTour = () => {
     <>
       <Carousel imageData={imageData} />
       <div className="mt-5 mx-auto">
-        <div className="container">{parsedTourProgram} </div>
+        <div className="container" style={{overflow: "hidden"}}>{parsedTourProgram} </div>
         <hr />
         <div className="mt-5 fw-light text-center container">
           {parsedWarningNotes}
           <div>
-            <button style={{ padding: '8px 12px', border: 'none', borderRadius: '7%' }}>Hemen Rezerve Et</button>
+            <a target="blank" href={`https://wa.me/+905339302927/?text=${foreignTour.departure.toLocaleDateString("tr")} tarihli - ${foreignTour.name} ile ilgili bilgi almak istiyorum.`}>
+              <button style={{ padding: '8px 12px', border: 'none', borderRadius: '7%' }}>Hemen Rezerve Et</button>
+            </a>
           </div>
         </div>
       </div>
