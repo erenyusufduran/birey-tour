@@ -5,23 +5,6 @@ import { FaArrowLeft, FaArrowRight } from 'react-icons/fa';
 
 import Masthead from './Masthead';
 
-const imageData = [
-  {
-    headerText: 'Ramazan Umre Programlarımız Açıklanmıştır',
-    headerColor: '#000',
-    pText: 'RAMAZAN AYI UMRE KAMPANYALARIMIZA KATILMAK İÇİN ACELE EDİN.',
-    img: 'home_header.jpg',
-    to: '/ramazan-umresi/servisli-oteller',
-  },
-  {
-    headerText: 'Şevval Umre Programlarımız Açıklanmıştır',
-    headerColor: '#000',
-    pText: 'ŞEVVAL AYI UMRE KAMPANYALARIMIZA KATILMAK İÇİN ACELE EDİN.',
-    img: 'home_2_headers.jpg',
-    to: '/sevval-umresi/umre',
-  },
-];
-
 const SButton = styled.button`
   position: absolute;
   top: 50%;
@@ -32,7 +15,7 @@ const SButton = styled.button`
   cursor: pointer;
 `;
 
-const Carousel = () => {
+const Carousel = ({ imageData }) => {
   const [change, setChange] = useState(0);
   const [mouseEntered, setMouseEntered] = useState(false);
 
@@ -43,7 +26,7 @@ const Carousel = () => {
 
     if (change === imageData.length * 2) setChange(0);
     return () => clearInterval(interval);
-  }, [change, mouseEntered]);
+  }, [change, mouseEntered, imageData]);
 
   const changeToLeft = () => {
     setChange((change) => (change === 0 ? imageData.length * 2 - 1 : change - 1));

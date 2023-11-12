@@ -12,6 +12,7 @@ const HacPage = lazy(() => import('./pages/HacPage'));
 const CultureToursPage = lazy(() => import('./pages/CultureToursPage'));
 const KudusToursPage = lazy(() => import('./pages/KudusToursPage'));
 const ForeignToursPage = lazy(() => import('./pages/ForeignToursPage'));
+const ForeignTour = lazy(() => import('./pages/ForeignTour'));
 const InformationPage = lazy(() => import('./pages/InformationPage'));
 const CommunicationPage = lazy(() => import('./pages/CommunicationPage'));
 const SubePage = lazy(() => import('./pages/SubePage'));
@@ -54,8 +55,8 @@ function App() {
                 element={<UmrePage cardDatas={ramazanLuxUmreCardDatas} headerText="Ramazan Lüx Umre" />}
               />
               <Route path="umre" element={<UmrePage cardDatas={ramazanUmreCardDatas} headerText="Ramazan Umresi" />} /> */}
-
-                <Route index path="servisli-oteller" element={<UmrePage cardDatas={servisli} headerText="Ramazan Umresi" />} />
+                <Route index element={<UmrePage cardDatas={servisli} headerText="Ramazan Umresi" />} />
+                <Route path="servisli-oteller" element={<UmrePage cardDatas={servisli} headerText="Ramazan Umresi" />} />
                 <Route path="yurume-mesafeli-oteller" element={<UmrePage cardDatas={yurumeMesafeli} headerText="Ramazan Umresi" />} />
                 <Route path="kisa-programlar" element={<UmrePage cardDatas={kisaProgram} headerText="Kısa Ramazan Umresi" />} />
                 <Route path="son-on-gun-programlari" element={<UmrePage cardDatas={son10GunProgram} headerText="Son 10 Gün Ramazan Umresi" />} />
@@ -69,6 +70,8 @@ function App() {
               <Route path="kultur-turlari" element={<CultureToursPage />} />
               <Route path="kudus-turlari" element={<KudusToursPage />} />
               <Route path="yurtdisi-turlari" element={<ForeignToursPage />} />
+              <Route path="yurtdisi-turlari/:id" element={<ForeignTour />} />
+
               <Route path="subelerimiz" element={<SubePage />} />
               <Route path="hakkimizda" element={<InformationPage />} />
               <Route path="iletisim" element={<CommunicationPage />} />
