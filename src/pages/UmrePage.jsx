@@ -38,15 +38,6 @@ const UmrePage = ({ cardDatas, headerText }) => {
 
   let extraText;
   switch (headerText) {
-    case 'Sömestr Umresi' || 'Sömestr Lüx Umre':
-      extraText = (
-        <ExtraText>
-          15 Aralık 2023&apos;e kadar olan ödemelerde 100$ indirim.
-          <br />
-          <span>(Bu tarihten sonra fiyatlarımız değişiklik gösterecektir.)</span>
-        </ExtraText>
-      );
-      break;
     case 'Şevval Umresi' || 'Şevval Lüx Umre':
       extraText = (
         <ExtraText className="mx-1">

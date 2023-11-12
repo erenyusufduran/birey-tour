@@ -156,14 +156,17 @@ function NavBar({ expanded, setExpanded }) {
               </StyledNavDropdown>
             </StyledNavDropdown>
 
-            <StyledNavDropdown title="Diğer Turlar">
+            {/* <StyledNavDropdown title="Diğer Turlar">
               <StyledDropdownComp to="/kudus-turlari" setExpanded={setExpanded}>
                 Kudüs Turları
               </StyledDropdownComp>
               <StyledDropdownComp to="/yurtdisi-turlari" setExpanded={setExpanded}>
                 Yurtdışı Turları
               </StyledDropdownComp>
-            </StyledNavDropdown>
+            </StyledNavDropdown> */}
+            <StyledLinkComp to="/yurtdisi-turlari" setExpanded={setExpanded}>
+              Yurtdışı Turları
+            </StyledLinkComp>
           </Nav>
 
           <StyledForm className="d-flex me-5 gap-5 justify-content-center">

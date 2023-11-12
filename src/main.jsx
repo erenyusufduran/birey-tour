@@ -9,7 +9,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <FloatingWhatsApp
       phoneNumber="+905339302927"
-      accountName="Birey Tour"
+      accountName="Birey Tur"
       avatar="/logo50x50.png"
       statusMessage="En fazla 2 saat içerisinde geri dönüş yapacağız."
       chatMessage="Size nasıl yardımcı olabiliriz?"
