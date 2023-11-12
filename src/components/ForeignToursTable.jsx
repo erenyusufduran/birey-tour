@@ -4,7 +4,6 @@ import Spinner from './Spinner';
 
 const ForeignToursTable = () => {
   const { foreignTours, isLoading } = useForeignTours();
-  console.log(foreignTours);
   if (isLoading) return <Spinner />;
 
   return (
@@ -22,7 +21,7 @@ const ForeignToursTable = () => {
         {foreignTours &&
           foreignTours.length &&
           foreignTours.map((foreignTour) => (
-           <ForeignTourRow foreignTour={foreignTour} key={foreignTour.id} />
+           <ForeignTourRow foreignTour={foreignTour} key={`${foreignTour.id}-${foreignTour.periotId}`} />
           ))}
       </tbody>
     </table>
