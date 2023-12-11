@@ -15,7 +15,7 @@ export const servisli = [
     threePeopleRoomPrices: ['1700'],
     fourPeopleRoomPrices: ['1600'],
     dates: {
-      entries: ['5 - 10 MART 2024'],
+      entries: ['3 MART 2024', '9 MART 2024'],
     },
     hotelType: 'Servisli Oteller',
     img: '/kaaba.jpg',
@@ -36,7 +36,7 @@ export const servisli = [
     threePeopleRoomPrices: ['1900'],
     fourPeopleRoomPrices: ['1800'],
     dates: {
-      entries: ['5 - 10 MART 2024'],
+      entries: ['3 MART 2024', '9 MART 2024'],
     },
     hotelType: 'Servisli Oteller',
     img: '/kaaba.jpg',
@@ -60,7 +60,7 @@ export const yurumeMesafeli = [
     threePeopleRoomPrices: ['2100'],
     fourPeopleRoomPrices: ['2000'],
     dates: {
-      entries: ['5 - 10 MART 2024'],
+      entries: ['3 MART 2024', '9 MART 2024'],
     },
     hotelType: 'Yürüme Mesafeli Oteller',
     img: '/kaaba.jpg',
@@ -81,7 +81,7 @@ export const yurumeMesafeli = [
     threePeopleRoomPrices: ['2300'],
     fourPeopleRoomPrices: ['2200'],
     dates: {
-      entries: ['5 - 10 MART 2024'],
+      entries: ['3 MART 2024', '9 MART 2024'],
     },
     hotelType: 'Yürüme Mesafeli Oteller',
     img: '/kaaba.jpg',
@@ -102,7 +102,7 @@ export const yurumeMesafeli = [
     threePeopleRoomPrices: ['2600'],
     fourPeopleRoomPrices: ['2400'],
     dates: {
-      entries: ['5 - 10 MART 2024'],
+      entries: ['3 MART 2024', '9 MART 2024'],
     },
     hotelType: 'Yürüme Mesafeli Oteller',
     img: '/kaaba.jpg',
@@ -123,7 +123,7 @@ export const yurumeMesafeli = [
     threePeopleRoomPrices: ['2500'],
     fourPeopleRoomPrices: ['2400'],
     dates: {
-      entries: ['5 - 10 MART 2024'],
+      entries: ['3 MART 2024', '9 MART 2024'],
     },
     hotelType: 'Yakın Mesafeli Oteller',
     img: '/kaaba.jpg',
@@ -144,7 +144,7 @@ export const yurumeMesafeli = [
     threePeopleRoomPrices: ['2700'],
     fourPeopleRoomPrices: ['2600'],
     dates: {
-      entries: ['5 - 10 MART 2024'],
+      entries: ['3 MART 2024', '9 MART 2024'],
     },
     hotelType: 'Yakın Mesafeli Oteller',
     img: '/kaaba.jpg',
@@ -165,23 +165,17 @@ export const yurumeMesafeli = [
     threePeopleRoomPrices: ['3000'],
     fourPeopleRoomPrices: ['2800'],
     dates: {
-      entries: ['5 - 10 MART 2024'],
+      entries: ['3 MART 2024', '9 MART 2024'],
     },
     hotelType: 'Yakın Mesafeli Oteller',
     img: '/kaaba.jpg',
   },
- 
 ];
 
 export const kisaProgram = [
   {
     id: 1,
-    extraTexts: [
-      'Mekke Otel: Aziziye, Şişe Bölgesi',
-      'Medine Otel: Merkeziye Bölgesi',
-      '0-2 Yaş: $500 / 3-5 Yaş: $800 / 6-11 Yaş: $1000 (Yataksız)',
-      'Sabah / Akşam Yemekleri TABLDOT',
-    ],
+    extraTexts: ['Mekke Otel: Aziziye, Şişe Bölgesi', 'Medine Otel: Merkeziye Bölgesi', '0-2 Yaş: $500 / 3-5 Yaş: $800 / 6-11 Yaş: $1000 (Yataksız)', 'Sabah / Akşam Yemekleri TABLDOT'],
     dayCounts: ['15 Gün', '20 Gün'],
     nightsDays: ['12 Gece Mekke / 3 Gece Medine', '17 Gece Mekke / 3 Gece Medine'],
     secondExtraHead: '3 Gün Medine',
@@ -189,7 +183,7 @@ export const kisaProgram = [
     threePeopleRoomPrices: ['1500', '1650'],
     fourPeopleRoomPrices: ['1400', '1550'],
     dates: {
-      entries: ['5 - 10 MART 2024', '19 - 21 MART 2024'],
+      entries: ['3 MART 2024', '9 MART 2024', '21 MART 2024', '2 NİSAN 2024'],
     },
     hotelType: 'Servisli Oteller',
     img: '/kaaba.jpg',
@@ -209,19 +203,14 @@ export const kisaProgram = [
     threePeopleRoomPrices: ['1900', '2300'],
     fourPeopleRoomPrices: ['1800', '2200'],
     dates: {
-      entries: ['5 - 10 MART 2024', '19 - 21 MART 2024'],
+      entries: ['3 MART 2024', '9 MART 2024', '21 MART 2024', '2 NİSAN 2024'],
     },
     hotelType: 'Yürüme Mesafeli Oteller',
     img: '/kaaba.jpg',
   },
   {
     id: 3,
-    extraTexts: [
-      'Mekke Otel: Sunrise / Elaf Ajyad Otel',
-      'Medine Otel: Merkeziye Bölgesi',
-      '0-2 Yaş: $500 / 3-5 Yaş: $800 / 6-11 Yaş: $1000 (Yataksız)',
-      'Sabah / Akşam Yemekleri Açık Büfe',
-    ],
+    extraTexts: ['Mekke Otel: Sunrise / Elaf Ajyad Otel', 'Medine Otel: Merkeziye Bölgesi', '0-2 Yaş: $500 / 3-5 Yaş: $800 / 6-11 Yaş: $1000 (Yataksız)', 'Sabah / Akşam Yemekleri Açık Büfe'],
     dayCounts: ['15 Gün', '20 Gün'],
     nightsDays: ['12 Gece Mekke / 3 Gece Medine', '17 Gece Mekke / 3 Gece Medine'],
     secondExtraHead: '3 Gün Medine',
@@ -229,7 +218,7 @@ export const kisaProgram = [
     threePeopleRoomPrices: ['2400', '3000'],
     fourPeopleRoomPrices: ['2300', '2900'],
     dates: {
-      entries: ['5 - 10 MART 2024', '19 - 21 MART 2024'],
+      entries: ['3 MART 2024', '9 MART 2024', '21 MART 2024', '2 NİSAN 2024'],
     },
     hotelType: 'Yakın Mesafeli Oteller',
     img: '/kaaba.jpg',
@@ -239,12 +228,7 @@ export const kisaProgram = [
 export const son10GunProgram = [
   {
     id: 1,
-    extraTexts: [
-      'Mekke Otel: Aziziye, Şişe Bölgesi',
-      'Medine Otel: Merkeziye Bölgesi',
-      '0-2 Yaş: $500 / 3-5 Yaş: $800 / 6-11 Yaş: $1000 (Yataksız)',
-      'Sabah / Akşam Yemekleri TABLDOT',
-    ],
+    extraTexts: ['Mekke Otel: Aziziye, Şişe Bölgesi', 'Medine Otel: Merkeziye Bölgesi', '0-2 Yaş: $500 / 3-5 Yaş: $800 / 6-11 Yaş: $1000 (Yataksız)', 'Sabah / Akşam Yemekleri TABLDOT'],
     dayCounts: ['15 Gün', '20 Gün'],
     nightsDays: ['Son 10 Gün Medine, Bayramın 2. Günü Mekke', 'Son 10 Gün Medine, Bayramın 2. Günü Mekke'],
     secondExtraHead: 'Son 10 Gün Medine, Bayramın 2. Günü Mekke',
@@ -252,19 +236,14 @@ export const son10GunProgram = [
     threePeopleRoomPrices: ['1800', '2000'],
     fourPeopleRoomPrices: ['1700', '1900'],
     dates: {
-      entries: ['30 - 31 MART 2024'],
+      entries: ['2 NİSAN 2024'],
     },
     hotelType: 'Yürüme Mesafeli Oteller',
     img: '/kaaba.jpg',
   },
   {
     id: 2,
-    extraTexts: [
-      'Mekke Otel: Süreyya / Elaf Ajyad Otel',
-      'Medine Otel: Merkeziye Bölgesi',
-      '0-2 Yaş: $500 / 3-5 Yaş: $800 / 6-11 Yaş: $1000 (Yataksız)',
-      'Sabah / Akşam Yemekleri Açık Büfe',
-    ],
+    extraTexts: ['Mekke Otel: Süreyya / Elaf Ajyad Otel', 'Medine Otel: Merkeziye Bölgesi', '0-2 Yaş: $500 / 3-5 Yaş: $800 / 6-11 Yaş: $1000 (Yataksız)', 'Sabah / Akşam Yemekleri Açık Büfe'],
     dayCounts: ['15 Gün', '20 Gün'],
     nightsDays: ['Son 10 Gün Medine, Bayramın 2. Günü Mekke', 'Son 10 Gün Medine, Bayramın 2. Günü Mekke'],
     secondExtraHead: 'Son 10 Gün Medine, Bayramın 2. Günü Mekke',
@@ -272,19 +251,14 @@ export const son10GunProgram = [
     threePeopleRoomPrices: ['2000', '2200'],
     fourPeopleRoomPrices: ['1900', '2100'],
     dates: {
-      entries: ['30 - 31 MART 2024'],
+      entries: ['2 NİSAN 2024'],
     },
     hotelType: 'Yakın Mesafeli Oteller',
     img: '/kaaba.jpg',
   },
   {
     id: 3,
-    extraTexts: [
-      'Mekke Otel: Angum Otel',
-      'Medine Otel: Sanabel / Ceodar Otel',
-      '0-2 Yaş: $500 / 3-5 Yaş: $800 / 6-11 Yaş: $1000 (Yataksız)',
-      'Sabah / Akşam Yemekleri Açık Büfe',
-    ],
+    extraTexts: ['Mekke Otel: Angum Otel', 'Medine Otel: Sanabel / Ceodar Otel', '0-2 Yaş: $500 / 3-5 Yaş: $800 / 6-11 Yaş: $1000 (Yataksız)', 'Sabah / Akşam Yemekleri Açık Büfe'],
     dayCounts: ['15 Gün', '20 Gün'],
     nightsDays: ['Son 10 Gün Medine, Bayramın 2. Günü Mekke', 'Son 10 Gün Medine, Bayramın 2. Günü Mekke'],
     secondExtraHead: 'Son 10 Gün Medine, Bayramın 2. Günü Mekke',
@@ -292,7 +266,7 @@ export const son10GunProgram = [
     threePeopleRoomPrices: ['2900', '3250'],
     fourPeopleRoomPrices: ['2800', '3150'],
     dates: {
-      entries: ['30 - 31 MART 2024'],
+      entries: ['2 NİSAN 2024'],
     },
     hotelType: '5 Yıldızlı Oteller',
     img: '/kaaba.jpg',
@@ -312,7 +286,7 @@ export const son10GunProgram = [
     threePeopleRoomPrices: ['3200', '3800'],
     fourPeopleRoomPrices: ['3100', '3700'],
     dates: {
-      entries: ['30 - 31 MART 2024'],
+      entries: ['2 NİSAN 2024'],
     },
     hotelType: '5 Yıldızlı Oteller',
     img: '/kaaba.jpg',
