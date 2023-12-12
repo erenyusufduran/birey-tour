@@ -1,5 +1,6 @@
 /* eslint-disable react/prop-types */
 import styled from 'styled-components';
+import { filterDates } from '../helpers/datesHelper';
 
 const MobileNone = styled.span`
   display: 'flex';
@@ -227,7 +228,8 @@ const TourCard = ({ tourCard }) => {
     img,
   } = tourCard;
 
-  const dateLength = dates.entries.length;
+  const datesEntries = filterDates(dates.entries);
+  const dateLength = datesEntries.length;
 
   return (
     <StyledCardCont className="text-center mt-5" style={{ backgroundColor: '#dfd9d9' }}>
@@ -397,7 +399,7 @@ const TourCard = ({ tourCard }) => {
               <div>
                 <StyledH6 className="mb-3 text-uppercase fw-bold">GİDİŞ TARİHLERİ</StyledH6>
                 <DatesRow className="row">
-                  {dates.entries.map((entry, i) => {
+                  {datesEntries.map((entry, i) => {
                     if (dateLength <= 5) {
                       return (
                         <StyledDates type="less" className="text-center" style={{ fontSize: '.9em' }} key={i}>

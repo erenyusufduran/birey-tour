@@ -10,7 +10,6 @@ export const umreCardDatas = [
     fourPeopleRoomPrices: ['1350', '1400', '1500'],
     dates: {
       entries: [
-        '11 ARALIK 2023',
         '19 ARALIK 2023',
         '20 ARALIK 2023',
         '26 ARALIK 2023',
@@ -18,9 +17,10 @@ export const umreCardDatas = [
         '04 OCAK 2024',
         '10 OCAK 2024',
         '12 OCAK 2024',
+        '28 OCAK 2024',
         '06 ŞUBAT 2024',
-        '20 ŞUBAT 2024',
-        '28 ŞUBAT 2024',
+        '13 ŞUBAT 2024',
+        '18 ŞUBAT 2024',
       ],
     },
     hotelType: 'Servisli Oteller',
