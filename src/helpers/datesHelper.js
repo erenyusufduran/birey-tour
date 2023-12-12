@@ -21,10 +21,7 @@ const analyzeDate = (_date) => {
   const currentDate = Date.now();
   const tourDate = new Date(newDate);
 
-  if (currentDate > tourDate) {
-    return false;
-  }
-  return true;
+  return currentDate <= tourDate;
 };
 
 /*
