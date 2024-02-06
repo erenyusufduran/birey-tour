@@ -378,7 +378,7 @@ const HacLuxTourCard = () => {
             Mekke Otel: Swiss / Ghufran Otel
           </StyledSectionMini>
           <StyledSectionMini type="bottom" className="text-white col-xl-6 col-md-12">
-            Medine Otel: Shahd Al Medine / Royal Inn Otel
+            Medine Otel: Frontel Al Harithia / Royal Inn Otel
           </StyledSectionMini>
           <StyledSectionMini type="bottom" className="text-white col-xl-6 col-md-12">
             Sabah ve Akşam Yemekleri AÇIK BÜFE

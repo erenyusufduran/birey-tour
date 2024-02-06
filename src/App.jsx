@@ -17,8 +17,8 @@ const InformationPage = lazy(() => import('./pages/InformationPage'));
 const CommunicationPage = lazy(() => import('./pages/CommunicationPage'));
 const SubePage = lazy(() => import('./pages/SubePage'));
 
-import { umreCardDatas, sevvalUmreCardDatas, somestrUmreCardDatas } from './data/umre';
-import { luxUmreCardDatas, sevvalLuxUmreCardDatas, somestrLuxUmreCardDatas } from './data/luxUmre';
+import { umreCardDatas, sevvalUmreCardDatas, summerUmreCardDatas } from './data/umre';
+import { luxUmreCardDatas, sevvalLuxUmreCardDatas, summerLuxUmreCardDatas } from './data/luxUmre';
 import { kisaProgram, son10GunProgram, servisli, yurumeMesafeli } from './data/ramadan';
 import PageNotFound from './pages/PageNotFound';
 
@@ -61,9 +61,9 @@ function App() {
                 <Route path="kisa-programlar" element={<UmrePage cardDatas={kisaProgram} headerText="Kısa Ramazan Umresi" />} />
                 <Route path="son-on-gun-programlari" element={<UmrePage cardDatas={son10GunProgram} headerText="Son 10 Gün Ramazan Umresi" />} />
               </Route>
-              <Route path="somestr-umresi" element={<Outlet />}>
-                <Route path="lux-umre" element={<UmrePage cardDatas={somestrLuxUmreCardDatas} headerText="Sömestr Lüx Umre" />} />
-                <Route path="umre" element={<UmrePage cardDatas={somestrUmreCardDatas} headerText="Sömestr Umresi" />} />
+              <Route path="yaz-umresi" element={<Outlet />}>
+                <Route path="lux-umre" element={<UmrePage cardDatas={summerLuxUmreCardDatas} headerText="Temmuz / Ağustos Lüx Umre" />} />
+                <Route path="umre" element={<UmrePage cardDatas={summerUmreCardDatas} headerText="Temmuz / Ağustos Umresi" />} />
               </Route>
 
               {/* OTHER PAGES */}

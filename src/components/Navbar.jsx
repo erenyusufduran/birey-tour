@@ -113,11 +113,11 @@ function NavBar({ expanded, setExpanded }) {
               </StyledNavDropdown>
               <NavDropdown.Divider />
 
-              <StyledNavDropdown drop="end" title="Sömestr Umre Programları">
-                <StyledDropdownComp to="/somestr-umresi/umre" setExpanded={setExpanded}>
+              <StyledNavDropdown drop="end" title="Temmuz / Ağustos Umre Programları">
+                <StyledDropdownComp to="/yaz-umresi/umre" setExpanded={setExpanded}>
                   Ekonomik Umre
                 </StyledDropdownComp>
-                <StyledDropdownComp to="/somestr-umresi/lux-umre" setExpanded={setExpanded}>
+                <StyledDropdownComp to="/yaz-umresi/lux-umre" setExpanded={setExpanded}>
                   Lüx Umre
                 </StyledDropdownComp>
               </StyledNavDropdown>

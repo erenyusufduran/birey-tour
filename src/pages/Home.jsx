@@ -19,6 +19,13 @@ const imageData = [
     img: 'home_2_headers.jpg',
     to: '/sevval-umresi/umre',
   },
+  {
+    headerText: 'Temmuz / Ağustos Umre Programlarımız Açıklanmıştır',
+    headerColor: '#000',
+    pText: 'TEMMUZ / AĞUSTOS UMRE KAMPANYALARIMIZA KATILMAK İÇİN ACELE EDİN.',
+    img: 'home_header.jpg',
+    to: '/yaz-umresi/umre',
+  },
 ];
 
 export default function Home() {

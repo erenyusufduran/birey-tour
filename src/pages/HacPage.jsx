@@ -13,9 +13,9 @@ const HacPage = () => {
 
   let extraText = (
     <ExtraText className="mx-1">
-      Hac için Pasaport Geçerlilik Tarihi 31 Aralık 2024.
+      Hac için Pasaport Geçerlilik Tarihi 10 Aralık 2024.
       <br />
-      <span>31 Aralık 2024 ve Öncesi Pasaportlar Kabul Edilmeyecektir.</span>
+      <span>10 Aralık 2024 Öncesi Pasaportlar Kabul Edilmeyecektir.</span>
     </ExtraText>
   );
 

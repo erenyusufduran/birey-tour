@@ -38,15 +38,6 @@ const UmrePage = ({ cardDatas, headerText }) => {
 
   let extraText;
   switch (headerText) {
-    case 'Şevval Umresi' || 'Şevval Lüx Umre':
-      extraText = (
-        <ExtraText className="mx-1">
-          Fiyatlar 1 Şubat 2024&apos;e kadar geçerlidir.
-          <br />
-          <span>(Bu tarihten sonra fiyatlarımız değişiklik gösterecektir.)</span>
-        </ExtraText>
-      );
-      break;
     case 'Ramazan Umresi--': // DELETED
       extraText = (
         <ExtraText className="mx-1">
@@ -69,7 +60,7 @@ const UmrePage = ({ cardDatas, headerText }) => {
         cardDatas.map((umreCardData) => <TourCard key={umreCardData.id} tourCard={umreCardData} />)
       ) : (
         <div className="conteiner text-center mt-5">
-          <h2>Şu anda herhangi bir tur bulunmamakta</h2>
+          <h2>Çok yakında detaylar açıklanacak..</h2>
           <SNavLink to="/">
             <h4 style={{ cursor: 'pointer', color: '#333' }}>Diğer turlarımıza göz atmak için tıkla</h4>
           </SNavLink>
