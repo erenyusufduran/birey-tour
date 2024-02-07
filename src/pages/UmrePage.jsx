@@ -38,6 +38,15 @@ const UmrePage = ({ cardDatas, headerText }) => {
 
   let extraText;
   switch (headerText) {
+    case 'Temmuz / Ağustos Umresi' || 'Temmuz / Ağustos Lüx Umre': // DELETED
+      extraText = (
+        <ExtraText className="mx-1">
+          Kontenjanlar Sınırlıdır!
+          <br />
+          <span>(Ödemelerin 28 Şubat 2024 tarihine kadar yapılması gerekmektedir.)</span>
+        </ExtraText>
+      );
+      break;
     case 'Ramazan Umresi--': // DELETED
       extraText = (
         <ExtraText className="mx-1">

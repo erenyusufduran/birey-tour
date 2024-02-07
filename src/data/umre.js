@@ -173,26 +173,86 @@ export const sevvalUmreCardDatas = [
 ];
 
 export const summerUmreCardDatas = [
-  // {
-  //   id: 1,
-  //   extraTexts: [
-  //     'Mekke Otel: Şişe Bölgesi / Makam Plaza Otel',
-  //     'Medine Otel: Merkeziye Bölgesi',
-  //     '0-2 Yaş: $550 / 3-5 Yaş: $950 / 6-11 Yaş: $1050 (Yataksız)',
-  //     'Sabah, Öğle KUMANYA / Akşam Yemekleri TABLDOT',
-  //   ],
-  //   dayCounts: ['9 Gece - 10 Gün', '13 Gece – 14 Gün'],
-  //   nightsDays: ['6 Gece Mekke / 3 Gece Medine', '10 Gece Mekke / 3 Gece Medine'],
-  //   secondExtraHead: '3 Gün Medine',
-  //   twoPeopleRoomPrices: ['1350', '1450'],
-  //   threePeopleRoomPrices: ['1325', '1400'],
-  //   fourPeopleRoomPrices: ['1300', '1350'],
-  //   dates: {
-  //     entries: ['13 OCAK 2024', '14 OCAK 2024', '16 OCAK 2024', '18 OCAK 2024', '19 OCAK 2024', '23 OCAK 2024'],
-  //   },
-  //   hotelType: 'Servisli Oteller',
-  //   img: '/kaaba.jpg',
-  // },
+  {
+    id: 1,
+    extraTexts: [
+      'Mekke Otel: Şişe Bölgesi / Servisli Oteller',
+      'Medine Otel: Merkeziye Bölgesi / Zehra Grup Otel Vb.',
+      '0-2 Yaş: $550 / 3-5 Yaş: $950 / 6-11 Yaş: $1050 (Yataksız)',
+      'Sabah, Öğle KUMANYA / Akşam Yemekleri TABLDOT',
+    ],
+    dayCounts: ['13 Gece - 14 Gün', '19 Gece – 20 Gün', '25 Gece - 26 Gün'],
+    nightsDays: ['10 Gece Mekke / 3 Gece Medine', '16 Gece Mekke / 3 Gece Medine', '22 Gece Mekke / 3 Gece Medine'],
+    secondExtraHead: '3 Gün Medine',
+    twoPeopleRoomPrices: ['1250', '1300', '1400'],
+    threePeopleRoomPrices: ['1200', '1250', '1350'],
+    fourPeopleRoomPrices: ['1050', '1100', '1300'],
+    dates: {
+      entries: ['15 TEMMUZ 2024'],
+    },
+    hotelType: 'Servisli Oteller',
+    img: '/kaaba.jpg',
+  },
+  {
+    id: 2,
+    extraTexts: [
+      'Mekke Otel: Mahbesel Cin, Reakbaksh Bölgesi',
+      'Medine Otel: Merkeziye Bölgesi / Zehra Grup Otel Vb.',
+      '0-2 Yaş: $550 / 3-5 Yaş: $950 / 6-11 Yaş: $1050 (Yataksız)',
+      'Sabah, Öğle KUMANYA / Akşam Yemekleri TABLDOT',
+    ],
+    dayCounts: ['13 Gece - 14 Gün', '19 Gece – 20 Gün', '25 Gece - 26 Gün'],
+    nightsDays: ['10 Gece Mekke / 3 Gece Medine', '16 Gece Mekke / 3 Gece Medine, 22 Gece Mekke / 3 Gece Medine'],
+    secondExtraHead: '3 Gün Medine',
+    twoPeopleRoomPrices: ['1400', '1500', '1550'],
+    threePeopleRoomPrices: ['1350', '1450', '1500'],
+    fourPeopleRoomPrices: ['1300', '1400', '1450'],
+    dates: {
+      entries: ['15 TEMMUZ 2024'],
+    },
+    hotelType: 'Servisli Oteller',
+    img: '/kaaba.jpg',
+  },
+  {
+    id: 3,
+    extraTexts: [
+      'Mekke Otel: Mira Shaeb, Murcan Kerim Otel vb.',
+      'Medine Otel: Merkeziye Bölgesi / Zehra Grup Otel Vb.',
+      '0-2 Yaş: $550 / 3-5 Yaş: $950 / 6-11 Yaş: $1050 (Yataksız)',
+      'Sabah, Öğle KUMANYA / Akşam Yemekleri TABLDOT',
+    ],
+    dayCounts: ['13 Gece - 14 Gün', '19 Gece – 20 Gün'],
+    nightsDays: ['10 Gece Mekke / 3 Gece Medine', '16 Gece Mekke / 3 Gece Medine'],
+    secondExtraHead: '3 Gün Medine',
+    twoPeopleRoomPrices: ['1450', '1500'],
+    threePeopleRoomPrices: ['1400', '1450'],
+    fourPeopleRoomPrices: ['1350', '1400'],
+    dates: {
+      entries: ['15 TEMMUZ 2024'],
+    },
+    hotelType: 'Yürüme Mesafeli Oteller',
+    img: '/kaaba.jpg',
+  },
+  {
+    id: 4,
+    extraTexts: [
+      'Mekke Otel: Nur Süreyya / Amjad / Safwat Ajyad Otel',
+      'Medine Otel: Merkeziye Bölgesi / Zehra Grup Otel Vb.',
+      '0-2 Yaş: $550 / 3-5 Yaş: $950 / 6-11 Yaş: $1050 (Yataksız)',
+      'Sabah, Öğle KUMANYA / Akşam Yemekleri AÇIK BÜFE',
+    ],
+    dayCounts: ['13 Gece - 14 Gün', '19 Gece – 20 Gün'],
+    nightsDays: ['10 Gece Mekke / 3 Gece Medine', '16 Gece Mekke / 3 Gece Medine'],
+    secondExtraHead: '3 Gün Medine',
+    twoPeopleRoomPrices: ['1600', '1900'],
+    threePeopleRoomPrices: ['1550', '1850'],
+    fourPeopleRoomPrices: ['1500', '1800'],
+    dates: {
+      entries: ['15 TEMMUZ 2024'],
+    },
+    hotelType: 'Servisli Oteller',
+    img: '/kaaba.jpg',
+  },
   // {
   //   id: 2,
   //   extraTexts: [
