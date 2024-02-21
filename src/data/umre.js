@@ -202,7 +202,7 @@ export const summerUmreCardDatas = [
       'Sabah, Öğle KUMANYA / Akşam Yemekleri TABLDOT',
     ],
     dayCounts: ['13 Gece - 14 Gün', '19 Gece – 20 Gün', '25 Gece - 26 Gün'],
-    nightsDays: ['10 Gece Mekke / 3 Gece Medine', '16 Gece Mekke / 3 Gece Medine, 22 Gece Mekke / 3 Gece Medine'],
+    nightsDays: ['10 Gece Mekke / 3 Gece Medine', '16 Gece Mekke / 3 Gece Medine', '22 Gece Mekke / 3 Gece Medine'],
     secondExtraHead: '3 Gün Medine',
     twoPeopleRoomPrices: ['1400', '1500', '1550'],
     threePeopleRoomPrices: ['1350', '1450', '1500'],

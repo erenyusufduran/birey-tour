@@ -11,8 +11,8 @@ export const servisli = [
     nightsDays: ['12 Gün Mekke / 3 Gece Medine'],
     secondExtraHead: '3 Gece Medine',
     twoPeopleRoomPrices: ['1625'],
-    threePeopleRoomPrices: ['1625'],
-    fourPeopleRoomPrices: ['1625'],
+    threePeopleRoomPrices: ['1575'],
+    fourPeopleRoomPrices: ['1525'],
     dates: {
       entries: ['1 NİSAN 2024'],
     },
@@ -31,8 +31,8 @@ export const servisli = [
     nightsDays: ['3 MART 2024'],
     secondExtraHead: '3 Gece Medine',
     twoPeopleRoomPrices: ['1675'],
-    threePeopleRoomPrices: ['1675'],
-    fourPeopleRoomPrices: ['1675'],
+    threePeopleRoomPrices: ['1625'],
+    fourPeopleRoomPrices: ['1575'],
     dates: {
       entries: ['10 MART 2024'],
     },
@@ -51,8 +51,8 @@ export const servisli = [
     nightsDays: ['3 MART 2024'],
     secondExtraHead: '3 Gece Medine',
     twoPeopleRoomPrices: ['1700'],
-    threePeopleRoomPrices: ['1700'],
-    fourPeopleRoomPrices: ['1700'],
+    threePeopleRoomPrices: ['1650'],
+    fourPeopleRoomPrices: ['1600'],
     dates: {
       entries: ['3 MART 2024'],
     },

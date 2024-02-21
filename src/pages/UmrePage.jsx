@@ -38,7 +38,7 @@ const UmrePage = ({ cardDatas, headerText }) => {
 
   let extraText;
   switch (headerText) {
-    case 'Temmuz / Ağustos Umresi' || 'Temmuz / Ağustos Lüx Umre': // DELETED
+    case 'Temmuz / Ağustos Umresi' || 'Temmuz / Ağustos Lux Umre': // DELETED
       extraText = (
         <ExtraText className="mx-1">
           Kontenjanlar Sınırlıdır!

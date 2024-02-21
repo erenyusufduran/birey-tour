@@ -62,7 +62,7 @@ function App() {
                 <Route path="son-on-gun-programlari" element={<UmrePage cardDatas={son10GunProgram} headerText="Son 10 Gün Ramazan Umresi" />} />
               </Route>
               <Route path="yaz-umresi" element={<Outlet />}>
-                <Route path="lux-umre" element={<UmrePage cardDatas={summerLuxUmreCardDatas} headerText="Temmuz / Ağustos Lüx Umre" />} />
+                <Route path="lux-umre" element={<UmrePage cardDatas={summerLuxUmreCardDatas} headerText="Temmuz / Ağustos Lux Umre" />} />
                 <Route path="umre" element={<UmrePage cardDatas={summerUmreCardDatas} headerText="Temmuz / Ağustos Umresi" />} />
               </Route>
 

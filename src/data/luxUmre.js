@@ -141,6 +141,66 @@ export const sevvalLuxUmreCardDatas = [
 ];
 
 export const summerLuxUmreCardDatas = [
+  {
+    id: 1,
+    extraTexts: [
+      'Mekke Otel: Anjum / Sharaton / Mariot Otel',
+      'Medine Otel: Emaar Maktan / Leader Otel Vb.',
+      '0-2 Yaş: $550 / 3-5 Yaş: $950 / 6-11 Yaş: $1050 (Yataksız)',
+      'Sabah / Akşam Yemekleri Açık Büfe',
+    ],
+    dayCounts: ['9 Gece - 10 Gün', '13 Gece – 14 Gün'],
+    nightsDays: ['6 Gece Mekke / 3 Gece Medine', '10 Gece Mekke / 3 Gece Medine'],
+    secondExtraHead: '3 Gün Medine',
+    twoPeopleRoomPrices: ['1700', '2000'],
+    threePeopleRoomPrices: ['1650', '1900'],
+    fourPeopleRoomPrices: ['-', '-'],
+    dates: {
+      entries: ['15 TEMMUZ 2024'],
+    },
+    hotelType: '4 - 5 Yıldızlı Oteller',
+    img: '/kaaba.jpg',
+  },
+  {
+    id: 2,
+    extraTexts: [
+      'Mekke Otel: Le Meridien / Ejyad Makarim / Elaf Meşair Otel',
+      'Medine Otel: Royal İnn / Emaar Royal Otel',
+      '0-2 Yaş: $550 / 3-5 Yaş: $950 / 6-11 Yaş: $1050 (Yataksız)',
+      'Sabah / Akşam Yemekleri Açık Büfe',
+    ],
+    dayCounts: ['9 Gece - 10 Gün', '13 Gece – 14 Gün'],
+    nightsDays: ['6 Gece Mekke / 3 Gece Medine', '10 Gece Mekke / 3 Gece Medine'],
+    secondExtraHead: '3 Gün Medine',
+    twoPeopleRoomPrices: ['1900', '2400'],
+    threePeopleRoomPrices: ['1850', '2300'],
+    fourPeopleRoomPrices: ['-', '-'],
+    dates: {
+      entries: ['15 TEMMUZ 2024'],
+    },
+    hotelType: '5 Yıldızlı Oteller',
+    img: '/kaaba.jpg',
+  },
+  {
+    id: 3,
+    extraTexts: [
+      'Mekke Otel: Orkid safwa, Gufran, Swiss Otel',
+      'Medine Otel: Royal Inn, Emaar Royal Otel Otel Vb.',
+      '0-2 Yaş: $550 / 3-5 Yaş: $950 / 6-11 Yaş: $1050 (Yataksız)',
+      'Sabah / Akşam Yemekleri Açık Büfe',
+    ],
+    dayCounts: ['9 Gece - 10 Gün', '11 Gece – 12 Gün'],
+    nightsDays: ['6 Gece Mekke / 3 Gece Medine', '8 Gece Mekke / 3 Gece Medine'],
+    secondExtraHead: '3 Gün Medine',
+    twoPeopleRoomPrices: ['2200', '2600'],
+    threePeopleRoomPrices: ['2150', '2550'],
+    fourPeopleRoomPrices: ['-', '-'],
+    dates: {
+      entries: ['15 TEMMUZ 2024'],
+    },
+    hotelType: '5 Yıldızlı Oteller',
+    img: '/kaaba.jpg',
+  },
   // {
   //   id: 1,
   //   extraTexts: [
